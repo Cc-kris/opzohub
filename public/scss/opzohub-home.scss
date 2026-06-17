@@ -205,16 +205,17 @@ body.page-opzohub-home .container#content {
 	color: #fff;
 	overflow: hidden;
 	background:
-		radial-gradient(circle at 82% 22%, rgba(255,255,255,0.22), transparent 27%),
+		radial-gradient(ellipse at 28% 50%, rgba(255,255,255,0.30) 0%, transparent 42%),
+		radial-gradient(circle at 82% 22%, rgba(255,255,255,0.18), transparent 27%),
 		linear-gradient(90deg,
 			#0438e8 0%,
-			#1a40e8 15%,
-			#3a3ae0 35%,
-			#5535d6 52%,
-			#7832c8 68%,
-			#a030b8 80%,
-			#d03595 90%,
-			#f05060 100%
+			#1238e0 12%,
+			#3a3ae0 32%,
+			#5535d6 50%,
+			#7832c8 66%,
+			#a030b8 78%,
+			#d03590 88%,
+			#f04840 100%
 		);
 	box-shadow: 0 18px 44px rgba(95, 88, 239, 0.27);
 }
@@ -270,14 +271,16 @@ body.page-opzohub-home .container#content {
 	background-size: cover;
 	background-position: center;
 	flex-shrink: 0;
+	/* 无封面图时的降级深色渐变 */
+	background-image: linear-gradient(135deg, #0a1a4a 0%, #1a2060 40%, #2a1850 70%, #0d1035 100%);
 }
-.pick-card.blue   .pick-cover { background-color: #1a3fcc; }
-.pick-card.purple .pick-cover { background-color: #5b21b6; }
-.pick-card.pink   .pick-cover { background-color: #9d174d; }
-.pick-card.orange .pick-cover { background-color: #92400e; }
-.pick-card.green  .pick-cover { background-color: #065f46; }
-/* 有真实图时用图 */
-.pick-cover.has-thumb { background-color: transparent; }
+.pick-card.blue   .pick-cover { background-image: linear-gradient(135deg, #0a1a6a 0%, #1a2880 40%, #1e1878 70%, #080e3a 100%); }
+.pick-card.purple .pick-cover { background-image: linear-gradient(135deg, #1a0a4a 0%, #2e1468 40%, #3b0d6e 70%, #120830 100%); }
+.pick-card.pink   .pick-cover { background-image: linear-gradient(135deg, #2a0a2a 0%, #4a1040 40%, #5a0840 70%, #1a041a 100%); }
+.pick-card.orange .pick-cover { background-image: linear-gradient(135deg, #1a0800 0%, #3a1400 40%, #4a1000 70%, #100400 100%); }
+.pick-card.green  .pick-cover { background-image: linear-gradient(135deg, #001a10 0%, #003020 40%, #00280a 70%, #000e08 100%); }
+/* 有真实图时用图覆盖 */
+.pick-cover.has-thumb { background-image: none; }
 /* 文字区 */
 .pick-body {
 	padding: 12px 14px 13px;
