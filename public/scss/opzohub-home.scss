@@ -242,7 +242,7 @@ body.page-opzohub-home .container#content {
 .opzohub-stats em { color: var(--opzo-muted); font-style: normal; margin-left: 2px; }
 
 .opzohub-section { padding: 18px; }
-.pick-section { padding: 0; }
+.pick-section { padding: 0; min-height: 300px; }
 .pick-section .section-head { display: none; }
 .section-head { margin-bottom: 16px; }
 .section-head h2,
