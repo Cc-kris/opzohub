@@ -76,6 +76,7 @@ exports.opzohubHome = async function (req, res) {
 
 	res.render('opzohub-home', {
 		title: 'opzohub - AI 与跨境增长社区',
+		bodyClasses: ['page-opzohub-home-pixel'],
 		breadcrumbs: helpers.buildBreadcrumbs([{ text: 'opzohub' }]),
 		features: [
 			{ icon: 'fa-bolt', title: 'AI 快讯', text: '追踪模型、产品、工具链与自动化实践的关键更新。' },

@@ -1,4 +1,33 @@
-.opzohub-home-pixel {
+body.page-opzohub-home-pixel {
+	margin: 0;
+	padding: 0;
+	background: #fdfefe;
+	overflow: hidden;
+}
+
+body.page-opzohub-home-pixel #panel,
+body.page-opzohub-home-pixel .navbar,
+body.page-opzohub-home-pixel .bottombar,
+body.page-opzohub-home-pixel .footer,
+body.page-opzohub-home-pixel footer {
+	display: none;
+}
+
+body.page-opzohub-home-pixel #content,
+body.page-opzohub-home-pixel .container,
+body.page-opzohub-home-pixel .container-lg,
+body.page-opzohub-home-pixel .container-md,
+body.page-opzohub-home-pixel .container-sm,
+body.page-opzohub-home-pixel .container-xl,
+body.page-opzohub-home-pixel .container-xxl {
+	width: 100vw;
+	max-width: none;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+body.page-opzohub-home-pixel .opzohub-home-pixel {
 	position: fixed;
 	inset: 0;
 	z-index: 2147483647;
@@ -10,7 +39,7 @@
 	overflow: hidden;
 }
 
-.opzohub-home-pixel__image {
+body.page-opzohub-home-pixel .opzohub-home-pixel__image {
 	display: block;
 	width: 100vw;
 	height: auto;
@@ -19,7 +48,7 @@
 }
 
 @media (min-width: 1448px) {
-	.opzohub-home-pixel__image {
+	body.page-opzohub-home-pixel .opzohub-home-pixel__image {
 		width: 1448px;
 		margin: 0 auto;
 	}
