@@ -6,73 +6,90 @@
 		</a>
 		<nav class="opzohub-main-nav" aria-label="Primary">
 			<a class="active" href="{config.relative_path}/">首页</a>
-			<a href="{config.relative_path}/categories">板块</a>
-			<a href="{config.relative_path}/recent">最新</a>
-			<a href="{config.relative_path}/popular">热门</a>
-			<a href="{config.relative_path}/tags">标签</a>
+			<a href="{config.relative_path}/recent">AI新闻</a>
+			<a href="{config.relative_path}/tags">AI技巧</a>
+			<a href="{config.relative_path}/categories?forumHome=1">跨境电商</a>
+			<a href="{config.relative_path}/categories?forumHome=1">独立站</a>
+			<a href="{config.relative_path}/categories?forumHome=1">亚马逊</a>
+			<a href="{config.relative_path}/tags">资源导航</a>
+			<a href="{config.relative_path}/categories?forumHome=1">社区</a>
 		</nav>
 		<form class="opzohub-search" action="{config.relative_path}/search" method="get">
 			<i class="fa fa-search"></i>
-			<input name="term" type="search" placeholder="搜索 AI、亚马逊、Codex 话题" />
+			<input name="term" type="search" placeholder="搜索帖子、话题、用户或资源" />
 		</form>
-		<a class="opzohub-post-btn" href="{config.relative_path}/compose"><i class="fa fa-pen"></i><span>发布话题</span></a>
+		<div class="opzohub-auth">
+			<a href="{config.relative_path}/login">登录</a>
+			<a class="register" href="{config.relative_path}/register">注册</a>
+		</div>
 	</header>
 
-	<section class="opzohub-hero">
-		<div class="hero-copy">
-			<span class="hero-kicker">AI · Amazon · Codex · Global Growth</span>
-			<h1>连接正在用 AI 和自动化改变生意的人</h1>
-			<p>opzohub 汇聚最新 AI 资讯、跨境电商实战、Codex 工作流和出海增长经验，让每一次讨论都变成可执行的方案。</p>
-			<div class="hero-actions">
-				<a class="primary" href="{config.relative_path}/register">加入社区</a>
-				<a class="secondary" href="{config.relative_path}/recent">浏览最新话题</a>
-			</div>
-		</div>
-		<div class="hero-panel">
-			<div class="hero-panel-head"><span>社区实时数据</span><b>Live</b></div>
-			<div class="hero-stats">
-				<article><strong>{stats.topics}</strong><span>主题</span></article>
-				<article><strong>{stats.posts}</strong><span>帖子</span></article>
-				<article><strong>{stats.users}</strong><span>成员</span></article>
-			</div>
-			<div class="hero-live-list">
-				{{{each featuredTopics}}}
-				<a href="{featuredTopics.url}"><em>{featuredTopics.categoryName}</em><span>{featuredTopics.title}</span></a>
-				{{{end}}}
-			</div>
-		</div>
-	</section>
+	<div class="opzohub-page-grid">
+		<aside class="opzohub-left-rail" aria-label="浏览版块">
+			<section class="opzohub-card channel-card">
+				<div class="opzohub-card-title"><span>浏览版块</span></div>
+				<a class="channel active" href="{config.relative_path}/recent"><i class="fa fa-bolt"></i><span>AI新闻</span><em>NEW</em></a>
+				<a class="channel" href="{config.relative_path}/categories?forumHome=1"><i class="fa fa-chart-line"></i><span>行业动态</span></a>
+				<a class="channel" href="{config.relative_path}/categories?forumHome=1"><i class="fa fa-building"></i><span>企业动态</span></a>
+				<a class="channel" href="{config.relative_path}/categories?forumHome=1"><i class="fa fa-scale-balanced"></i><span>政策法规</span></a>
+				<a class="channel" href="{config.relative_path}/tags"><i class="fa fa-wand-magic-sparkles"></i><span>AI技巧与工具</span></a>
+				<a class="channel" href="{config.relative_path}/tags"><i class="fa fa-comment-dots"></i><span>Prompt技巧</span></a>
+				<a class="channel" href="{config.relative_path}/categories?forumHome=1"><i class="fa fa-robot"></i><span>自动化工具</span></a>
+				<a class="channel" href="{config.relative_path}/categories?forumHome=1"><i class="fa fa-diagram-project"></i><span>工作流</span></a>
+				<a class="channel" href="{config.relative_path}/categories?forumHome=1"><i class="fa fa-plug"></i><span>AI插件</span></a>
+			</section>
 
-	<div class="opzohub-layout">
-		<main class="opzohub-main-column">
-			<section class="opzohub-card quick-picks">
+			<section class="opzohub-card channel-card commerce-card">
+				{{{each categories}}}
+				<a class="channel" href="{categories.url}"><i class="fa {categories.icon}"></i><span>{categories.name}</span></a>
+				{{{end}}}
+			</section>
+		</aside>
+
+		<main class="opzohub-main" aria-label="首页内容">
+			<section class="opzohub-hero-panel">
+				<div>
+					<p class="eyebrow">AI · CROSS-BORDER · INDEPENDENT SITE</p>
+					<h1>AI赋能增长 · 跨境创造未来</h1>
+					<p>聚焦AI、跨境电商与独立站的实战经验分享平台</p>
+				</div>
+				<a href="{config.relative_path}/register">立即加入</a>
+			</section>
+
+			<section class="opzohub-stats" aria-label="社区统计">
+				<article><span>优质内容</span><strong>{stats.posts}</strong><em>篇</em></article>
+				<article><span>活跃用户</span><strong>{stats.users}</strong><em>位</em></article>
+				<article><span>主题讨论</span><strong>{stats.topics}</strong><em>条</em></article>
+				<article><span>今日新增</span><strong>{stats.today}</strong><em>篇</em></article>
+			</section>
+
+			<section class="opzohub-section pick-section">
 				<div class="section-head">
-					<div><span>精选板块</span><h2>从你关心的方向开始</h2></div>
-					<a href="{config.relative_path}/categories">全部板块</a>
+					<div><h2>编辑精选</h2><span>Editor's Picks</span></div>
+					<a href="{config.relative_path}/popular">查看全部 &gt;</a>
 				</div>
 				<div class="pick-grid">
-					{{{each categories}}}
-					<a class="pick-card {categories.accent}" href="{categories.url}">
-						<span><i class="fa {categories.icon}"></i></span>
-						<h3>{categories.name}</h3>
-						<p>{categories.description}</p>
-						<footer><em>{categories.topicCount} 主题</em><em>{categories.postCount} 帖子</em></footer>
+					{{{each featuredTopics}}}
+					<a class="pick-card {featuredTopics.accent}" href="{featuredTopics.url}">
+						<span>{featuredTopics.categoryName}</span>
+						<h3>{featuredTopics.title}</h3>
+						<footer><b>{featuredTopics.username}</b><em><i class="fa fa-eye"></i> {featuredTopics.views} <i class="fa fa-comment"></i> {featuredTopics.replies}</em></footer>
 					</a>
 					{{{end}}}
 				</div>
 			</section>
 
-			<section class="opzohub-card topic-feed">
+			<section class="opzohub-section latest-section">
 				<div class="section-head tabs-head">
-					<div><span>社区讨论</span><h2>最新话题</h2></div>
-					<nav><a class="active" href="{config.relative_path}/recent">最新</a><a href="{config.relative_path}/popular">热门</a><a href="{config.relative_path}/unread">未读</a></nav>
+					<div><h2>最新帖子</h2><span>Latest Posts</span></div>
+					<nav><a class="active" href="{config.relative_path}/recent">最新回复</a><a href="{config.relative_path}/recent">最新发布</a><a href="{config.relative_path}/popular">热门</a><a href="{config.relative_path}/popular">精华</a></nav>
 				</div>
 				<div class="post-list">
 					{{{each topics}}}
 					<a class="post-row {{{if topics.pinned}}}pinned{{{end}}} {{{if topics.hot}}}hot{{{end}}}" href="{topics.url}">
-						<span class="tag">{topics.badge}</span>
+						<span class="{{{if topics.pinned}}}tag{{{else}}}avatar{{{end}}}">{topics.badge}</span>
 						<h3>{topics.title}</h3>
-						<p>{topics.categoryName} · {topics.username} · {topics.date}</p>
+						<p>{topics.username} · {topics.date} · {topics.categoryName}</p>
 						<em>{topics.views}</em>
 						<b>{topics.replies}</b>
 					</a>
@@ -91,7 +108,7 @@
 			</section>
 
 			<section class="opzohub-card tags-card">
-				<div class="side-head"><h2>热门板块</h2><a href="{config.relative_path}/categories">全部</a></div>
+				<div class="side-head"><h2>今日热门标签</h2><a href="{config.relative_path}/categories">换一换</a></div>
 				<div class="tag-cloud">
 					{{{each categories}}}
 					<a href="{categories.url}">{categories.name} <b>{categories.topicCount}</b></a>
@@ -100,11 +117,11 @@
 			</section>
 
 			<section class="opzohub-card users-card">
-				<div class="side-head"><h2>活跃用户</h2><a href="{config.relative_path}/users">查看全部</a></div>
+				<div class="side-head"><h2>活跃用户（本周）</h2><a href="{config.relative_path}/users">查看全部</a></div>
 				{{{each activeUsers}}}
 				<a class="user-row" href="{activeUsers.url}">
 					{{{if activeUsers.picture}}}<img src="{activeUsers.picture}" alt="{activeUsers.username}" />{{{else}}}<i>{activeUsers.avatarText}</i>{{{end}}}
-					<span>{activeUsers.username}</span><em>{activeUsers.reputation} 声望</em>
+					<span>{activeUsers.username}</span><em>{activeUsers.reputation}积分</em>
 				</a>
 				{{{end}}}
 			</section>

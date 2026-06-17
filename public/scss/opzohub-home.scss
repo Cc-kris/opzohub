@@ -1,5 +1,32 @@
+body.page-opzohub-home {
+	position: relative;
+	top: -16px;
+}
+
+.page-opzohub-home .layout-container {
+	display: block !important;
+	padding-bottom: 0 !important;
+}
+
+.page-opzohub-home [component="sidebar/left"],
+.page-opzohub-home [component="sidebar/right"],
+.page-opzohub-home .brand-container {
+	display: none !important;
+}
+
+body.page-opzohub-home #content.container-lg,
+body.page-opzohub-home #content.container,
+body.page-opzohub-home .container#content {
+	max-width: none !important;
+	width: 100% !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	display: block !important;
+	gap: 0 !important;
+}
+
 .opzohub-home {
-	--opzo-bg: #f6f7fb;
+	--opzo-bg: #ffffff;
 	--opzo-card: #ffffff;
 	--opzo-ink: #182033;
 	--opzo-muted: #7c8596;
@@ -10,10 +37,10 @@
 	--opzo-pink: #ec4899;
 	--opzo-orange: #f59e0b;
 	--opzo-green: #10b981;
-	width: 100%;
+	width: 100vw;
 	min-height: 100vh;
-	margin: -1rem 0 0;
-	padding: 0 24px 36px;
+	margin: 0 0 0 calc(50% - 50vw);
+	padding: 0 40px 36px;
 	background: var(--opzo-bg);
 	color: var(--opzo-ink);
 	font-size: 14px;
@@ -27,12 +54,12 @@
 
 .opzohub-topbar {
 	height: 58px;
-	max-width: 1396px;
-	margin: 0 auto 18px;
+	max-width: 1368px;
+	margin: 0 auto 8px;
 	display: grid;
-	grid-template-columns: 150px minmax(520px, 1fr) 300px 112px;
+	grid-template-columns: 178px minmax(520px, 831px) 295px 1fr;
 	align-items: center;
-	gap: 18px;
+	column-gap: 29px;
 }
 
 .opzohub-logo {
@@ -110,11 +137,11 @@
 .opzohub-auth .register { color: #fff; background: var(--opzo-blue); box-shadow: 0 8px 18px rgba(49, 119, 255, 0.24); }
 
 .opzohub-page-grid {
-	max-width: 1396px;
+	max-width: 1368px;
 	margin: 0 auto;
 	display: grid;
-	grid-template-columns: 184px minmax(0, 822px) 300px;
-	gap: 18px;
+	grid-template-columns: 178px minmax(0, 831px) 295px;
+	column-gap: 29px;
 	align-items: start;
 }
 
@@ -170,8 +197,8 @@
 
 .opzohub-main { display: grid; gap: 16px; }
 .opzohub-hero-panel {
-	min-height: 132px;
-	padding: 28px 34px;
+	min-height: 98px;
+	padding: 20px 34px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -193,7 +220,7 @@
 	gap: 14px;
 }
 .opzohub-stats article {
-	min-height: 72px;
+	min-height: 106px;
 	padding: 14px 18px;
 	border: 1px solid var(--opzo-line);
 	border-radius: 16px;
@@ -205,6 +232,8 @@
 .opzohub-stats em { color: var(--opzo-muted); font-style: normal; margin-left: 2px; }
 
 .opzohub-section { padding: 18px; }
+.pick-section { padding: 0; }
+.pick-section .section-head { display: none; }
 .section-head { margin-bottom: 16px; }
 .section-head h2,
 .side-head h2 { font-size: 17px; font-weight: 950; }
@@ -316,7 +345,7 @@
 .resources-card em { color: var(--opzo-muted); font-size: 12px; font-style: normal; }
 .resources-card b { grid-column: 2; color: var(--opzo-blue); font-size: 12px; }
 .tag-cloud { display: flex; flex-wrap: wrap; gap: 9px; }
-.tag-cloud a { padding: 7px 10px; border-radius: 999px; background: #f2f5fa; color: #5d6678; font-size: 13px; font-weight: 800; }
+.tag-cloud span { padding: 7px 10px; border-radius: 999px; background: #f2f5fa; color: #5d6678; font-size: 13px; font-weight: 800; }
 .tag-cloud b { color: var(--opzo-blue); font-weight: 900; margin-left: 3px; }
 .user-row {
 	display: grid;
@@ -336,7 +365,7 @@
 .vip-card b { font-size: 16px; }
 .vip-card small { opacity: 0.82; line-height: 1.5; }
 
-@media (max-width: 1250px) {
+@media (max-width: 1100px) {
 	.opzohub-topbar { grid-template-columns: 150px 1fr 260px; }
 	.opzohub-auth { display: none; }
 	.opzohub-page-grid { grid-template-columns: 180px minmax(0, 1fr); }
@@ -357,65 +386,13 @@
 }
 
 
-body.page-opzohub-home {
-	background: #eef4fb;
-}
-
-body.page-opzohub-home .opzohub-home {
-	min-height: 100vh;
-}
-
-body.page-opzohub-home .opzohub-home a {
-	text-decoration: none;
-}
-
-.hero-live-list {
-	display: grid;
-	gap: 10px;
-	margin-top: 18px;
-}
-
-.hero-live-list a {
-	display: grid;
-	gap: 4px;
-	padding: 10px 12px;
-	border-radius: 14px;
-	background: rgba(255, 255, 255, 0.78);
-	color: #1f2937;
-}
-
-.hero-live-list em {
-	font-style: normal;
-	font-size: 12px;
-	font-weight: 900;
-	color: #2563eb;
-}
-
-.hero-live-list span {
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	font-weight: 850;
-}
-
-.pick-card p {
-	min-height: 42px;
-	margin: -6px 0 10px;
-	opacity: 0.9;
-	font-size: 12px;
-	line-height: 1.45;
-}
-
 .tag-cloud a {
-	display: inline-flex;
-	align-items: center;
-	gap: 6px;
 	padding: 7px 10px;
 	border-radius: 999px;
-	background: #f3f6fb;
-	color: #586174;
-	font-size: 12px;
-	font-weight: 850;
+	background: #f2f5fa;
+	color: #5d6678;
+	font-size: 13px;
+	font-weight: 800;
 }
 
 .user-row img {
@@ -423,10 +400,4 @@ body.page-opzohub-home .opzohub-home a {
 	height: 34px;
 	border-radius: 50%;
 	object-fit: cover;
-}
-
-.events-card article a {
-	display: grid;
-	gap: 5px;
-	color: inherit;
 }
