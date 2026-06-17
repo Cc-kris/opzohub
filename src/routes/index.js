@@ -78,6 +78,7 @@ _mounts.tags = (app, name, middleware, controllers) => {
 	setupPageRoute(app, `/${name}`, [middleware.privateTagListing], controllers.tags.getTags);
 };
 _mounts.categories = (app, name, middleware, controllers) => {
+	setupPageRoute(app, '/opzohub-home', [], controllers.home.opzohubHome);
 	setupPageRoute(app, '/categories', [], controllers.categories.list);
 	setupPageRoute(app, '/popular', [], controllers.popular.get);
 	setupPageRoute(app, '/recent', [], controllers.recent.get);
