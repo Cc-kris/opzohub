@@ -256,6 +256,8 @@ body.page-opzohub-home .container#content {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	gap: 13px;
+	min-height: 220px;
+	align-content: start;
 }
 .pick-card {
 	min-height: 198px;
