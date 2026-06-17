@@ -1,7 +1,10 @@
 .opzohub-home-pixel {
+	position: fixed;
+	inset: 0;
+	z-index: 2147483647;
 	width: 100vw;
-	min-height: 100vh;
-	margin: -1rem 0 0 calc(50% - 50vw);
+	height: 100vh;
+	margin: 0;
 	padding: 0;
 	background: #fdfefe;
 	overflow: hidden;
@@ -9,7 +12,7 @@
 
 .opzohub-home-pixel__image {
 	display: block;
-	width: 100%;
+	width: 100vw;
 	height: auto;
 	margin: 0;
 	border: 0;
