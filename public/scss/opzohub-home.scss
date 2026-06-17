@@ -206,7 +206,16 @@ body.page-opzohub-home .container#content {
 	overflow: hidden;
 	background:
 		radial-gradient(circle at 82% 22%, rgba(255,255,255,0.22), transparent 27%),
-		linear-gradient(135deg, #2c72ff 0%, #8857f0 57%, #ee5aa7 100%);
+		linear-gradient(90deg,
+			#0438e8 0%,
+			#1a40e8 15%,
+			#3a3ae0 35%,
+			#5535d6 52%,
+			#7832c8 68%,
+			#a030b8 80%,
+			#d03595 90%,
+			#f05060 100%
+		);
 	box-shadow: 0 18px 44px rgba(95, 88, 239, 0.27);
 }
 .opzohub-hero-panel .eyebrow { font-size: 11px; font-weight: 900; letter-spacing: 0.14em; opacity: 0.8; margin-bottom: 12px; }
@@ -248,35 +257,39 @@ body.page-opzohub-home .container#content {
 	gap: 13px;
 }
 .pick-card {
-	min-height: 182px;
-	padding: 16px 14px 13px;
 	border-radius: 17px;
-	color: #fff;
+	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	overflow: hidden;
-	position: relative;
+	background: #fff;
+	box-shadow: 0 2px 12px rgba(30,40,100,0.08);
 }
-.pick-card::after {
-	content: "";
-	position: absolute;
-	width: 120px;
-	height: 120px;
-	right: -46px;
-	bottom: -48px;
-	border-radius: 50%;
-	background: rgba(255,255,255,0.18);
+/* 封面图区 */
+.pick-cover {
+	height: 96px;
+	background-size: cover;
+	background-position: center;
+	flex-shrink: 0;
 }
-.pick-card span { align-self: flex-start; padding: 4px 9px; border-radius: 999px; background: rgba(255,255,255,0.22); font-weight: 900; font-size: 12px; }
-.pick-card h3 { font-size: 16px; line-height: 1.42; font-weight: 900; margin: 16px 0; }
-.pick-card footer { display: grid; gap: 7px; font-size: 12px; opacity: 0.92; }
-.pick-card footer em { font-style: normal; display: flex; gap: 8px; align-items: center; }
-.pick-card.blue { background: linear-gradient(140deg, #2f77ff, #2fc4ff); }
-.pick-card.purple { background: linear-gradient(140deg, #7c3aed, #a855f7); }
-.pick-card.pink { background: linear-gradient(140deg, #ec4899, #f973b7); }
-.pick-card.orange { background: linear-gradient(140deg, #f59e0b, #fb7185); }
-.pick-card.green { background: linear-gradient(140deg, #10b981, #22c55e); }
+.pick-card.blue   .pick-cover { background-color: #1a3fcc; }
+.pick-card.purple .pick-cover { background-color: #5b21b6; }
+.pick-card.pink   .pick-cover { background-color: #9d174d; }
+.pick-card.orange .pick-cover { background-color: #92400e; }
+.pick-card.green  .pick-cover { background-color: #065f46; }
+/* 有真实图时用图 */
+.pick-cover.has-thumb { background-color: transparent; }
+/* 文字区 */
+.pick-body {
+	padding: 12px 14px 13px;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	flex: 1;
+}
+.pick-body span { align-self: flex-start; padding: 3px 8px; border-radius: 999px; background: #eef2ff; color: var(--opzo-blue); font-weight: 900; font-size: 11px; }
+.pick-body h3 { font-size: 14px; line-height: 1.4; font-weight: 900; color: #1a1f36; margin: 2px 0 4px; }
+.pick-body footer { display: flex; justify-content: space-between; font-size: 11px; color: var(--opzo-muted); }
+.pick-body footer em { font-style: normal; display: flex; gap: 6px; align-items: center; }
 
 .tabs-head nav { display: flex; gap: 8px; }
 .tabs-head nav a { padding: 6px 12px; border-radius: 999px; color: #747d8f; font-weight: 800; }

@@ -142,19 +142,31 @@ async function getRecentTopics(uid) {
 		term: 'alltime',
 		query: {},
 	});
-	return (data.topics || []).filter(Boolean).slice(0, 10).map((topic, index) => ({
-		tid: topic.tid,
-		title: topic.title,
-		url: `${meta.config.relative_path || ''}/topic/${topic.slug || topic.tid}`,
-		categoryName: topic.category ? topic.category.name : '',
-		username: topic.user ? topic.user.username : '',
-		views: compactNumber(topic.viewcount),
-		replies: compactNumber(Math.max(0, (parseInt(topic.postcount, 10) || 1) - 1)),
-		badge: topicBadge(topic, index),
-		pinned: !!topic.pinned,
-		hot: !topic.pinned && index < 2,
-		date: formatDate(topic.lastposttime || topic.timestamp),
-	}));
+	return (data.topics || []).filter(Boolean).slice(0, 10).map((topic, index) => {
+		// 尝试从thumbs数组取封面图
+		let thumbUrl = '';
+		if (Array.isArray(topic.thumbs) && topic.thumbs.length > 0) {
+			thumbUrl = topic.thumbs[0].url || topic.thumbs[0].thumb || '';
+		} else if (topic.teaser && topic.teaser.content) {
+			const m = String(topic.teaser.content).match(/<img[^>]+src=["']([^"']+)["']/i);
+			if (m) thumbUrl = m[1];
+		}
+		return {
+			tid: topic.tid,
+			title: topic.title,
+			url: `${meta.config.relative_path || ''}/topic/${topic.slug || topic.tid}`,
+			categoryName: topic.category ? topic.category.name : '',
+			username: topic.user ? topic.user.username : '',
+			views: compactNumber(topic.viewcount),
+			replies: compactNumber(Math.max(0, (parseInt(topic.postcount, 10) || 1) - 1)),
+			badge: topicBadge(topic, index),
+			pinned: !!topic.pinned,
+			hot: !topic.pinned && index < 2,
+			accent: categoryAccent(index),
+			date: formatDate(topic.lastposttime || topic.timestamp),
+			thumbUrl: thumbUrl,
+		};
+	});
 }
 
 async function getActiveUsers() {
@@ -175,6 +187,8 @@ function pickTopics(topicList, start, length) {
 	return topicList.slice(start, start + length).map(topic => ({
 		title: topic.title,
 		url: topic.url,
+		accent: topic.accent,
+		thumbUrl: topic.thumbUrl || '',
 		meta: `${topic.categoryName || '社区'} · ${topic.date}`,
 	}));
 }

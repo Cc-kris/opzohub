@@ -71,9 +71,12 @@
 				<div class="pick-grid">
 					{{{each featuredTopics}}}
 					<a class="pick-card {featuredTopics.accent}" href="{featuredTopics.url}">
-						<span>{featuredTopics.categoryName}</span>
-						<h3>{featuredTopics.title}</h3>
-						<footer><b>{featuredTopics.username}</b><em><i class="fa fa-eye"></i> {featuredTopics.views} <i class="fa fa-comment"></i> {featuredTopics.replies}</em></footer>
+						<div class="pick-cover {{{if featuredTopics.thumbUrl}}}has-thumb{{{end}}}" style="{{{if featuredTopics.thumbUrl}}}background-image:url('{featuredTopics.thumbUrl}'){{{end}}}"></div>
+						<div class="pick-body">
+							<span>{featuredTopics.categoryName}</span>
+							<h3>{featuredTopics.title}</h3>
+							<footer><b>{featuredTopics.username}</b><em><i class="fa fa-eye"></i> {featuredTopics.views} <i class="fa fa-comment"></i> {featuredTopics.replies}</em></footer>
+						</div>
 					</a>
 					{{{end}}}
 				</div>
