@@ -206,6 +206,156 @@
 				</div>
 			</div>
 
+
+			<hr/>
+
+			<div id="opzohub-home-settings" class="mb-4">
+				<h5 class="fw-bold tracking-tight settings-header">OpzoHub 首页</h5>
+				<p class="form-text">配置 OpzoHub 首页品牌文案、导航、频道和 Banner。列表字段每行一个，格式为：标题|链接|图标class|角标（角标可留空）。</p>
+
+				<div class="row">
+					<div class="col-sm-6 mb-3">
+						<label class="form-label" for="opzohubHomeTitle">首页品牌标题</label>
+						<input id="opzohubHomeTitle" type="text" class="form-control" data-field="opzohub:home:title" placeholder="OpzoHub" />
+					</div>
+					<div class="col-sm-6 mb-3">
+						<label class="form-label" for="opzohubHomeLogo">首页 Logo URL</label>
+						<input id="opzohubHomeLogo" type="text" class="form-control" data-field="opzohub:home:logo" placeholder="/assets/uploads/logo.png" />
+					</div>
+				</div>
+
+				<div class="mb-3">
+					<label class="form-label" for="opzohubHomeDescription">首页描述</label>
+					<textarea id="opzohubHomeDescription" class="form-control" rows="2" data-field="opzohub:home:description" placeholder="社区首页描述，会作为 SEO 描述默认值"></textarea>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6 mb-3">
+						<label class="form-label" for="opzohubHomeSeoTitle">SEO 标题</label>
+						<input id="opzohubHomeSeoTitle" type="text" class="form-control" data-field="opzohub:home:seo:title" placeholder="留空则自动使用品牌标题 + 首页描述" />
+					</div>
+					<div class="col-sm-6 mb-3">
+						<label class="form-label" for="opzohubHomeSeoDescription">SEO 描述</label>
+						<input id="opzohubHomeSeoDescription" type="text" class="form-control" data-field="opzohub:home:seo:description" placeholder="留空则使用首页描述" />
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6 mb-3">
+						<label class="form-label" for="opzohubHomeNav">顶部导航</label>
+						<textarea id="opzohubHomeNav" class="form-control" rows="7" data-field="opzohub:home:nav" placeholder="首页|/|fa-house|\n最新|/recent|fa-bolt|NEW"></textarea>
+					</div>
+					<div class="col-sm-6 mb-3">
+						<label class="form-label" for="opzohubHomeChannels">左侧频道</label>
+						<textarea id="opzohubHomeChannels" class="form-control" rows="7" data-field="opzohub:home:channels" placeholder="最新讨论|/recent|fa-bolt|NEW\n热门主题|/popular|fa-chart-line|"></textarea>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6 mb-3">
+						<label class="form-label" for="opzohubHomeHeroTitle">Hero 标题</label>
+						<input id="opzohubHomeHeroTitle" type="text" class="form-control" data-field="opzohub:home:hero:title" placeholder="AI赋能增长 · 跨境创造未来" />
+					</div>
+					<div class="col-sm-6 mb-3">
+						<label class="form-label" for="opzohubHomeHeroEyebrow">Hero 眉标</label>
+						<input id="opzohubHomeHeroEyebrow" type="text" class="form-control" data-field="opzohub:home:hero:eyebrow" placeholder="AI · CROSS-BORDER · INDEPENDENT SITE" />
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-4 mb-3">
+						<label class="form-label" for="opzohubHomeHeroImage">Hero 背景图</label>
+						<input id="opzohubHomeHeroImage" type="text" class="form-control" data-field="opzohub:home:hero:image" placeholder="https://..." />
+					</div>
+					<div class="col-sm-4 mb-3">
+						<label class="form-label" for="opzohubHomeHeroCtaText">Hero 按钮文案</label>
+						<input id="opzohubHomeHeroCtaText" type="text" class="form-control" data-field="opzohub:home:hero:cta:text" placeholder="立即加入" />
+					</div>
+					<div class="col-sm-4 mb-3">
+						<label class="form-label" for="opzohubHomeHeroCtaLink">Hero 按钮链接</label>
+						<input id="opzohubHomeHeroCtaLink" type="text" class="form-control" data-field="opzohub:home:hero:cta:link" placeholder="/register" />
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6 mb-3">
+						<label class="form-label" for="opzohubHomeBannerTop">顶部 Banner 图片 URL</label>
+						<input id="opzohubHomeBannerTop" type="text" class="form-control" data-field="opzohub:home:banner:main:image" placeholder="https://..." />
+					</div>
+					<div class="col-sm-6 mb-3">
+						<label class="form-label" for="opzohubHomeBannerTopLink">顶部 Banner 链接</label>
+						<input id="opzohubHomeBannerTopLink" type="text" class="form-control" data-field="opzohub:home:banner:main:link" placeholder="/topic/..." />
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6 mb-3">
+						<label class="form-label" for="opzohubHomeBannerSide">侧栏 Banner 图片 URL</label>
+						<input id="opzohubHomeBannerSide" type="text" class="form-control" data-field="opzohub:home:banner:right:image" placeholder="https://..." />
+					</div>
+					<div class="col-sm-6 mb-3">
+						<label class="form-label" for="opzohubHomeBannerSideLink">侧栏 Banner 链接</label>
+						<input id="opzohubHomeBannerSideLink" type="text" class="form-control" data-field="opzohub:home:banner:right:link" placeholder="/topic/..." />
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-4 mb-3">
+						<label class="form-label" for="opzohubHomeNoticeTitle">公告标题 / 分类</label>
+						<input id="opzohubHomeNoticeTitle" type="text" class="form-control mb-2" data-field="opzohub:home:notice:title" placeholder="公告" />
+						<input id="opzohubHomeNoticeCids" type="text" class="form-control mb-2" data-field="opzohub:home:notice:cids" placeholder="CID：1,2" />
+						<input id="opzohubHomeNoticeTags" type="text" class="form-control mb-2" data-field="opzohub:home:notice:tags" placeholder="标签：公告,通知" />
+						<select id="opzohubHomeNoticeSort" class="form-select mb-2" data-field="opzohub:home:notice:sort">
+							<option value="recent">最新回复</option>
+							<option value="create">最新发布</option>
+							<option value="posts">最多回复</option>
+							<option value="votes">最多点赞</option>
+						</select>
+						<p class="form-text">分类和标签都留空时使用最新回复主题。</p>
+					</div>
+					<div class="col-sm-4 mb-3">
+						<label class="form-label" for="opzohubHomeResourceTitle">资源标题 / 分类</label>
+						<input id="opzohubHomeResourceTitle" type="text" class="form-control mb-2" data-field="opzohub:home:resource:title" placeholder="资源推荐" />
+						<input id="opzohubHomeResourceCids" type="text" class="form-control mb-2" data-field="opzohub:home:resource:cids" placeholder="CID：3,4" />
+						<input id="opzohubHomeResourceTags" type="text" class="form-control mb-2" data-field="opzohub:home:resource:tags" placeholder="标签：资源,工具" />
+						<select id="opzohubHomeResourceSort" class="form-select mb-2" data-field="opzohub:home:resource:sort">
+							<option value="votes">最多点赞</option>
+							<option value="posts">最多回复</option>
+							<option value="recent">最新回复</option>
+							<option value="create">最新发布</option>
+						</select>
+						<input id="opzohubHomeResourceTerm" type="text" class="form-control" data-field="opzohub:home:resource:term" placeholder="范围：daily / weekly / monthly / alltime" />
+					</div>
+					<div class="col-sm-4 mb-3">
+						<label class="form-label" for="opzohubHomeEventTitle">活动标题 / 分类</label>
+						<input id="opzohubHomeEventTitle" type="text" class="form-control mb-2" data-field="opzohub:home:event:title" placeholder="近期活动" />
+						<input id="opzohubHomeEventCids" type="text" class="form-control mb-2" data-field="opzohub:home:event:cids" placeholder="CID：5" />
+						<input id="opzohubHomeEventTags" type="text" class="form-control mb-2" data-field="opzohub:home:event:tags" placeholder="标签：活动,直播" />
+						<select id="opzohubHomeEventSort" class="form-select" data-field="opzohub:home:event:sort">
+							<option value="create">最新发布</option>
+							<option value="recent">最新回复</option>
+							<option value="posts">最多回复</option>
+							<option value="votes">最多点赞</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-4 mb-3">
+						<label class="form-label" for="opzohubHomeVipTitle">VIP 卡片标题</label>
+						<input id="opzohubHomeVipTitle" type="text" class="form-control" data-field="opzohub:home:vip:title" placeholder="加入opzohub VIP" />
+					</div>
+					<div class="col-sm-4 mb-3">
+						<label class="form-label" for="opzohubHomeVipDesc">VIP 卡片描述</label>
+						<input id="opzohubHomeVipDesc" type="text" class="form-control" data-field="opzohub:home:vip:desc" placeholder="解锁专属课程、会员内容与更多社区特权" />
+					</div>
+					<div class="col-sm-4 mb-3">
+						<label class="form-label" for="opzohubHomeVipLink">VIP 卡片链接</label>
+						<input id="opzohubHomeVipLink" type="text" class="form-control" data-field="opzohub:home:vip:link" placeholder="/register" />
+					</div>
+				</div>
+			</div>
+
 			<hr/>
 
 			<div id="search-settings" class="mb-4">

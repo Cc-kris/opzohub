@@ -467,6 +467,39 @@ body.page-opzohub-home .container#content {
 	background-position: center;
 	color: #fff;
 }
+
+.opzohub-empty {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 108px;
+	padding: 18px;
+	border: 1px dashed #cfd8ea;
+	border-radius: 16px;
+	background: #f8fbff;
+	color: var(--opzo-muted);
+	font-size: 14px;
+	font-weight: 750;
+	text-align: center;
+}
+.opzohub-empty.mini {
+	min-height: 54px;
+	padding: 12px;
+	font-size: 12px;
+}
+.resources-card a {
+	grid-template-columns: minmax(0, 1fr) auto auto;
+}
+.resources-card a span {
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.resources-card a b {
+	white-space: nowrap;
+}
+
 .opzohub-banner-slot,
 .opzohub-side-banner {
 	display: flex;
@@ -595,4 +628,160 @@ body.page-opzohub-home .container#content {
 	.opzohub-auth a {
 		flex: 1 1 0;
 	}
+}
+
+/* OpzoHub homepage hardening: final layout guardrails */
+.opzohub-home,
+.opzohub-home * {
+	box-sizing: border-box;
+}
+
+.opzohub-topbar {
+	grid-template-columns: minmax(150px, 210px) minmax(260px, 1fr) minmax(220px, 320px) auto;
+	min-width: 0;
+}
+.opzohub-main-nav,
+.opzohub-search,
+.opzohub-auth {
+	min-width: 0;
+}
+.opzohub-main-nav {
+	overflow: hidden;
+}
+.opzohub-main-nav a,
+.opzohub-auth a,
+.tabs-head nav button {
+	flex: 0 0 auto;
+}
+.opzohub-auth {
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 8px;
+}
+.opzohub-auth a {
+	display: inline-flex;
+	align-items: center;
+	min-height: 36px;
+	line-height: 1;
+}
+
+.opzohub-page-grid {
+	grid-template-columns: minmax(176px, 230px) minmax(0, 1fr) minmax(240px, 295px);
+}
+.opzohub-card,
+.opzohub-section,
+.opzohub-hero-panel,
+.post-row,
+.pick-card,
+.notice-card > a,
+.resources-card > a,
+.events-card article a {
+	min-width: 0;
+}
+
+.section-head.tabs-head {
+	gap: 12px;
+	align-items: flex-start;
+}
+.section-head.tabs-head > div {
+	min-width: 150px;
+}
+.section-head.tabs-head nav {
+	justify-content: flex-end;
+	min-width: 0;
+}
+
+.resources-card > a {
+	grid-template-columns: minmax(0, 1fr) 28px;
+	grid-template-areas: "title icon" "meta icon";
+	column-gap: 10px;
+}
+.resources-card > a span { grid-area: title; }
+.resources-card > a em { grid-area: meta; }
+.resources-card > a b {
+	grid-area: icon;
+	width: 28px;
+	height: 28px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	justify-self: end;
+	border-radius: 999px;
+	background: #eff5ff;
+	white-space: nowrap;
+}
+
+.opzohub-banner-slot,
+.opzohub-side-banner {
+	text-align: center;
+}
+.opzohub-banner-slot span,
+.opzohub-side-banner span,
+.opzohub-banner-slot em,
+.opzohub-side-banner em,
+.events-card span,
+.events-card p,
+.vip-card b,
+.vip-card small {
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+@media (max-width: 1180px) {
+	.opzohub-home { padding-inline: 24px; }
+	.opzohub-topbar {
+		grid-template-columns: minmax(140px, 180px) minmax(260px, 1fr) minmax(190px, 260px);
+		column-gap: 18px;
+	}
+	.opzohub-auth { display: none; }
+	.opzohub-page-grid {
+		grid-template-columns: minmax(170px, 220px) minmax(0, 1fr);
+		column-gap: 20px;
+	}
+	.opzohub-right-rail {
+		grid-column: 1 / -1;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 760px) {
+	.opzohub-home { padding: 0 12px 28px; }
+	.opzohub-topbar {
+		grid-template-columns: 1fr;
+		gap: 10px;
+	}
+	.opzohub-logo { max-width: 100%; }
+	.opzohub-main-nav {
+		overflow-x: auto;
+		padding-bottom: 2px;
+	}
+	.opzohub-search { width: 100%; }
+	.opzohub-page-grid,
+	.opzohub-right-rail {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 14px;
+	}
+	.opzohub-left-rail { display: none; }
+	.section-head.tabs-head {
+		flex-direction: column;
+		align-items: stretch;
+	}
+	.section-head.tabs-head nav {
+		justify-content: flex-start;
+		overflow-x: auto;
+		flex-wrap: nowrap;
+		padding-bottom: 2px;
+	}
+	.post-row {
+		grid-template-columns: 38px minmax(0, 1fr) 42px;
+		grid-template-areas: "badge title replies" "badge meta replies";
+	}
+	.post-row em { display: none; }
+	.pick-grid,
+	.opzohub-stats { grid-template-columns: 1fr; }
 }
