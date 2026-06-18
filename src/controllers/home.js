@@ -119,30 +119,72 @@ function formatDate(value) {
 	return `${date.getMonth() + 1}-${date.getDate()}`;
 }
 
-async function getHomeCategories(uid) {
-	const list = await categories.getCategoriesByPrivilege('categories:cid', uid, 'find');
-	return (list || []).filter(Boolean).filter(category => !category.disabled).slice(0, 5).map((category, index) => ({
-		cid: category.cid,
-		name: category.name,
-		description: category.description || category.name,
-		icon: category.icon || 'fa-comments',
-		url: category.link || `${meta.config.relative_path || ''}/category/${category.slug}`,
-		topicCount: compactNumber(category.topic_count || category.topicCount),
-		postCount: compactNumber(category.post_count || category.postCount),
-		accent: categoryAccent(index),
-	}));
+function configValue(...keys) {
+	const found = keys.map(key => meta.config[key]).find(value => value !== undefined && value !== null && String(value).trim());
+	return found ? String(found).trim() : '';
 }
 
-async function getRecentTopics(uid) {
+function getBrand() {
+	return {
+		title: configValue('siteTitle', 'title') || 'opzohub',
+		logo: configValue('brand:logo', 'brand:logo:url', 'logo'),
+		logoAlt: configValue('brand:logo:alt', 'siteTitle', 'title') || 'opzohub',
+	};
+}
+
+function getHomeBanners() {
+	return {
+		heroTitle: configValue('opzohub:home:hero:title') || 'AI赋能增长 · 跨境创造未来',
+		heroSubtitle: configValue('opzohub:home:hero:subtitle') || '聚焦AI、跨境电商与独立站的实战经验分享平台',
+		heroEyebrow: configValue('opzohub:home:hero:eyebrow') || 'AI · CROSS-BORDER · INDEPENDENT SITE',
+		heroImage: configValue('opzohub:home:hero:image'),
+		mainBannerImage: configValue('opzohub:home:banner:main:image'),
+		mainBannerLink: configValue('opzohub:home:banner:main:link') || '#',
+		rightBannerImage: configValue('opzohub:home:banner:right:image'),
+		rightBannerLink: configValue('opzohub:home:banner:right:link') || '#',
+	};
+}
+
+function cleanCategoryName(name) {
+	const value = String(name || '').trim();
+	if (!value) {
+		return '社区';
+	}
+	if (/^\[\[category:uncategorized\]\]$/i.test(value)) {
+		return '未分类';
+	}
+	return value.replace(/^\[\[category:/i, '').replace(/\]\]$/, '') || '社区';
+}
+
+async function getHomeCategories(uid) {
+	const list = await categories.getCategoriesByPrivilege('categories:cid', uid, 'find');
+	return (list || [])
+		.filter(Boolean)
+		.filter(category => !category.disabled)
+		.filter(category => cleanCategoryName(category.name) !== '未分类' && category.slug !== '../world' && category.link !== '/world')
+		.slice(0, 5)
+		.map((category, index) => ({
+			cid: category.cid,
+			name: cleanCategoryName(category.name),
+			description: category.description || cleanCategoryName(category.name),
+			icon: category.icon || 'fa-comments',
+			url: category.link || `${meta.config.relative_path || ''}/category/${category.slug}`,
+			topicCount: compactNumber(category.topic_count || category.topicCount),
+			postCount: compactNumber(category.post_count || category.postCount),
+			accent: categoryAccent(index),
+		}));
+}
+
+async function getRecentTopics(uid, sort = 'recent', stop = 9) {
 	const data = await topics.getSortedTopics({
 		uid: uid,
 		start: 0,
-		stop: 9,
-		sort: 'recent',
+		stop: stop,
+		sort: sort,
 		term: 'alltime',
 		query: {},
 	});
-	return (data.topics || []).filter(Boolean).slice(0, 10).map((topic, index) => {
+	return (data.topics || []).filter(Boolean).slice(0, stop + 1).map((topic, index) => {
 		// 尝试从thumbs数组取封面图
 		let thumbUrl = '';
 		if (Array.isArray(topic.thumbs) && topic.thumbs.length > 0) {
@@ -155,7 +197,8 @@ async function getRecentTopics(uid) {
 			tid: topic.tid,
 			title: topic.title,
 			url: `${meta.config.relative_path || ''}/topic/${topic.slug || topic.tid}`,
-			categoryName: topic.category ? topic.category.name : '',
+			categoryName: cleanCategoryName(topic.category ? topic.category.name : ''),
+			categorySlug: topic.category ? (topic.category.slug || topic.category.name || '') : '',
 			username: topic.user ? topic.user.username : '',
 			views: compactNumber(topic.viewcount),
 			replies: compactNumber(Math.max(0, (parseInt(topic.postcount, 10) || 1) - 1)),
@@ -163,6 +206,7 @@ async function getRecentTopics(uid) {
 			pinned: !!topic.pinned,
 			hot: !topic.pinned && index < 2,
 			accent: categoryAccent(index),
+			timestamp: topic.lastposttime || topic.timestamp,
 			date: formatDate(topic.lastposttime || topic.timestamp),
 			thumbUrl: thumbUrl,
 		};
@@ -189,6 +233,7 @@ function pickTopics(topicList, start, length) {
 		url: topic.url,
 		accent: topic.accent,
 		thumbUrl: topic.thumbUrl || '',
+		categoryName: topic.categoryName || '社区',
 		meta: `${topic.categoryName || '社区'} · ${topic.date}`,
 	}));
 }
@@ -200,24 +245,30 @@ exports.opzohubHome = async function (req, res, next) {
 			content: 'opzohub 汇聚 AI 资讯、亚马逊运营、Codex 自动化与出海增长话题。',
 		}];
 
-		const [homeCategories, recentTopics, activeUsers, stats] = await Promise.all([
+		const [homeCategories, recentTopics, newestTopics, activeUsers, stats] = await Promise.all([
 			getHomeCategories(req.uid),
-			getRecentTopics(req.uid),
+			getRecentTopics(req.uid, 'recent', 9),
+			getRecentTopics(req.uid, 'newest_to_oldest', 9),
 			getActiveUsers(),
 			db.getObjectFields('global', ['topicCount', 'postCount', 'userCount']),
 		]);
 
-		const featuredTopics = recentTopics.slice(0, 3);
+		const featuredTopics = recentTopics.slice(0, 5);
 		const noticeTopics = pickTopics(recentTopics, 0, 3);
 		const resourceTopics = pickTopics(recentTopics, 3, 4);
 		const eventTopics = pickTopics(recentTopics, 7, 2);
+		const brand = getBrand();
+		const banners = getHomeBanners();
 
 		res.render('opzohub-home', {
-			title: 'opzohub - AI 与跨境增长社区',
+			title: `${brand.title} - AI 与跨境增长社区`,
 			bodyClasses: ['page-opzohub-home'],
 			breadcrumbs: helpers.buildBreadcrumbs([{ text: 'opzohub' }]),
-			categories: homeCategories,
+			brand: brand,
+			banners: banners,
+			homeCategories: homeCategories,
 			topics: recentTopics,
+			newestTopics: newestTopics,
 			featuredTopics: featuredTopics,
 			noticeTopics: noticeTopics,
 			resourceTopics: resourceTopics,
@@ -227,6 +278,7 @@ exports.opzohubHome = async function (req, res, next) {
 				topics: compactNumber(stats.topicCount),
 				posts: compactNumber(stats.postCount),
 				users: compactNumber(stats.userCount),
+				today: compactNumber(recentTopics.filter(topic => (Date.now() - parseInt(topic.timestamp || 0, 10)) < 86400000).length || newestTopics.length),
 			},
 		});
 	} catch (err) {

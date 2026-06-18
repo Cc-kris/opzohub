@@ -1,8 +1,12 @@
 <section class="opzohub-home" aria-label="opzohub homepage">
 	<header class="opzohub-topbar">
-		<a class="opzohub-logo" href="{config.relative_path}/">
+		<a class="opzohub-logo" href="{config.relative_path}/" aria-label="{brand.logoAlt}">
+			{{{if brand.logo}}}
+			<img src="{brand.logo}" alt="{brand.logoAlt}" />
+			{{{else}}}
 			<span class="opzohub-logo-dot"></span>
-			<span>opzohub</span>
+			<span>{brand.title}</span>
+			{{{end}}}
 		</a>
 		<nav class="opzohub-main-nav" aria-label="Primary">
 			<a class="active" href="{config.relative_path}/">首页</a>
@@ -40,21 +44,25 @@
 			</section>
 
 			<section class="opzohub-card channel-card commerce-card">
-				{{{each categories}}}
-				<a class="channel" href="{categories.url}"><i class="fa {categories.icon}"></i><span>{categories.name}</span></a>
+				{{{each homeCategories}}}
+				<a class="channel" href="{homeCategories.url}"><i class="fa {homeCategories.icon}"></i><span>{homeCategories.name}</span></a>
 				{{{end}}}
 			</section>
 		</aside>
 
 		<main class="opzohub-main" aria-label="首页内容">
-			<section class="opzohub-hero-panel">
+			<section class="opzohub-hero-panel {{{if banners.heroImage}}}has-banner{{{end}}}" style="{{{if banners.heroImage}}}background-image: linear-gradient(110deg, rgba(7, 18, 52, .76), rgba(23, 45, 96, .42)), url('{banners.heroImage}'){{{end}}}">
 				<div>
-					<p class="eyebrow">AI · CROSS-BORDER · INDEPENDENT SITE</p>
-					<h1>AI赋能增长 · 跨境创造未来</h1>
-					<p>聚焦AI、跨境电商与独立站的实战经验分享平台</p>
+					<p class="eyebrow">{banners.heroEyebrow}</p>
+					<h1>{banners.heroTitle}</h1>
+					<p>{banners.heroSubtitle}</p>
 				</div>
 				<a href="{config.relative_path}/register">立即加入</a>
 			</section>
+
+			<a class="opzohub-banner-slot {{{if banners.mainBannerImage}}}has-image{{{end}}}" href="{banners.mainBannerLink}" aria-label="首页横幅广告位">
+				{{{if banners.mainBannerImage}}}<img src="{banners.mainBannerImage}" alt="首页横幅广告" />{{{else}}}<span>Banner 广告位</span><em>可接后台配置或插件投放</em>{{{end}}}
+			</a>
 
 			<section class="opzohub-stats" aria-label="社区统计">
 				<article><span>优质内容</span><strong>{stats.posts}</strong><em>篇</em></article>
@@ -85,16 +93,27 @@
 			<section class="opzohub-section latest-section">
 				<div class="section-head tabs-head">
 					<div><h2>最新帖子</h2><span>Latest Posts</span></div>
-					<nav><a class="active" href="{config.relative_path}/recent">最新回复</a><a href="{config.relative_path}/recent">最新发布</a><a href="{config.relative_path}/popular">热门</a><a href="{config.relative_path}/popular">精华</a></nav>
+					<nav role="tablist"><button class="active" type="button" data-opzo-tab="replies">最新回复</button><button type="button" data-opzo-tab="newest">最新发布</button><a href="{config.relative_path}/popular">热门</a><a href="{config.relative_path}/popular">精华</a></nav>
 				</div>
-				<div class="post-list">
+				<div class="post-list active" data-opzo-panel="replies">
 					{{{each topics}}}
 					<a class="post-row {{{if topics.pinned}}}pinned{{{end}}} {{{if topics.hot}}}hot{{{end}}}" href="{topics.url}">
 						<span class="{{{if topics.pinned}}}tag{{{else}}}avatar{{{end}}}">{topics.badge}</span>
 						<h3>{topics.title}</h3>
-						<p>{topics.username} · {topics.date} · {topics.categoryName}</p>
+						<p>{topics.username} · {topics.date}{{{if topics.categoryName}}} · {topics.categoryName}{{{end}}}</p>
 						<em>{topics.views}</em>
 						<b>{topics.replies}</b>
+					</a>
+					{{{end}}}
+				</div>
+				<div class="post-list" data-opzo-panel="newest">
+					{{{each newestTopics}}}
+					<a class="post-row {{{if newestTopics.pinned}}}pinned{{{end}}} {{{if newestTopics.hot}}}hot{{{end}}}" href="{newestTopics.url}">
+						<span class="{{{if newestTopics.pinned}}}tag{{{else}}}avatar{{{end}}}">{newestTopics.badge}</span>
+						<h3>{newestTopics.title}</h3>
+						<p>{newestTopics.username} · {newestTopics.date}{{{if newestTopics.categoryName}}} · {newestTopics.categoryName}{{{end}}}</p>
+						<em>{newestTopics.views}</em>
+						<b>{newestTopics.replies}</b>
 					</a>
 					{{{end}}}
 				</div>
@@ -129,6 +148,10 @@
 				{{{end}}}
 			</section>
 
+			<a class="opzohub-side-banner {{{if banners.rightBannerImage}}}has-image{{{end}}}" href="{banners.rightBannerLink}" aria-label="侧栏广告位">
+				{{{if banners.rightBannerImage}}}<img src="{banners.rightBannerImage}" alt="侧栏广告" />{{{else}}}<span>侧栏 Banner 位</span><em>预留后台/插件配置</em>{{{end}}}
+			</a>
+
 			<section class="opzohub-card resources-card">
 				<div class="side-head"><h2>资源推荐</h2><a href="{config.relative_path}/recent">查看全部</a></div>
 				{{{each resourceTopics}}}
@@ -146,3 +169,17 @@
 		</aside>
 	</div>
 </section>
+
+<script>
+(function () {
+	const root = document.querySelector('.opzohub-home');
+	if (!root) { return; }
+	root.querySelectorAll('[data-opzo-tab]').forEach((button) => {
+		button.addEventListener('click', () => {
+			const name = button.getAttribute('data-opzo-tab');
+			root.querySelectorAll('[data-opzo-tab]').forEach(item => item.classList.toggle('active', item === button));
+			root.querySelectorAll('[data-opzo-panel]').forEach(panel => panel.classList.toggle('active', panel.getAttribute('data-opzo-panel') === name));
+		});
+	});
+}());
+</script>

@@ -419,3 +419,180 @@ body.page-opzohub-home .container#content {
 	border-radius: 50%;
 	object-fit: cover;
 }
+
+
+/* OpzoHub homepage fixes: dynamic logo, ad slots, grid flow and tabs */
+.opzohub-logo {
+	min-width: 0;
+	max-width: 220px;
+}
+.opzohub-logo img {
+	display: block;
+	max-width: 170px;
+	max-height: 42px;
+	object-fit: contain;
+}
+.opzohub-auth {
+	flex: 0 0 auto;
+	white-space: nowrap;
+}
+.opzohub-auth a {
+	min-width: 72px;
+	justify-content: center;
+	white-space: nowrap;
+}
+.opzohub-page-grid {
+	align-items: start;
+	grid-template-columns: minmax(180px, 230px) minmax(0, 1fr) minmax(230px, 290px);
+}
+.opzohub-left-rail,
+.opzohub-right-rail,
+.opzohub-main {
+	min-width: 0;
+}
+.opzohub-left-rail,
+.opzohub-right-rail {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+}
+.channel span,
+.tag-cloud a,
+.resources-card span,
+.resources-card em {
+	min-width: 0;
+}
+.opzohub-hero-panel.has-banner {
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+}
+.opzohub-banner-slot,
+.opzohub-side-banner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 4px;
+	min-height: 92px;
+	border: 1px dashed #b8c5dc;
+	border-radius: 18px;
+	background: linear-gradient(135deg, #f8fbff 0%, #eef4ff 100%);
+	color: #70809c;
+	font-weight: 850;
+	overflow: hidden;
+}
+.opzohub-side-banner {
+	min-height: 120px;
+}
+.opzohub-banner-slot em,
+.opzohub-side-banner em {
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	color: var(--opzo-muted);
+}
+.opzohub-banner-slot.has-image,
+.opzohub-side-banner.has-image {
+	padding: 0;
+	border-style: solid;
+	background: #fff;
+}
+.opzohub-banner-slot img,
+.opzohub-side-banner img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.tabs-head nav {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+.tabs-head nav button,
+.tabs-head nav a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 30px;
+	padding: 0 11px;
+	border: 0;
+	border-radius: 999px;
+	background: #f2f5fb;
+	color: #69748a;
+	font-size: 13px;
+	font-weight: 850;
+	line-height: 1;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.tabs-head nav .active {
+	background: var(--opzo-blue);
+	color: #fff;
+}
+.post-list {
+	display: none;
+}
+.post-list.active {
+	display: block;
+}
+.post-row p {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.resources-card a {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) 32px;
+	grid-template-areas: "title icon" "meta icon";
+	column-gap: 10px;
+	align-items: center;
+}
+.resources-card a span {
+	grid-area: title;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.resources-card a em {
+	grid-area: meta;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.resources-card a b {
+	grid-area: icon;
+	width: 30px;
+	height: 30px;
+	min-width: 30px;
+	justify-self: end;
+}
+@media (max-width: 1180px) {
+	.opzohub-page-grid {
+		grid-template-columns: minmax(0, 1fr);
+	}
+	.opzohub-left-rail,
+	.opzohub-right-rail {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+@media (max-width: 720px) {
+	.opzohub-home {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	.opzohub-topbar,
+	.opzohub-auth,
+	.opzohub-left-rail,
+	.opzohub-right-rail {
+		grid-template-columns: minmax(0, 1fr);
+	}
+	.opzohub-auth {
+		width: 100%;
+	}
+	.opzohub-auth a {
+		flex: 1 1 0;
+	}
+}
