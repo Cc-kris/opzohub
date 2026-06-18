@@ -197,16 +197,15 @@ body.page-opzohub-home .container#content {
 
 .opzohub-main { display: grid; gap: 20px; }
 .opzohub-hero-panel {
-	min-height: 116px;
+	min-height: 100px;
 	margin-bottom: 2px;
-	padding: 24px 34px;
+	padding: 13px 34px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	color: #fff;
 	overflow: hidden;
 	background:
-		radial-gradient(circle at 82% 22%, rgba(255,255,255,0.22), transparent 27%),
 		linear-gradient(90deg,
 			#0438e8 0%,
 			#1a40e8 15%,
