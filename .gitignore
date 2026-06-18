@@ -1,8 +1,9 @@
 dist/
 yarn.lock
 npm-debug.log
-node_modules
-node_modules/
+node_modules/*
+!node_modules/nodebb-theme-opzohub/
+!node_modules/nodebb-theme-opzohub/**
 sftp-config.json
 config.json
 config.json*

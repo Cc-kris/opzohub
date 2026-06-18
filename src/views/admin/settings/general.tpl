@@ -288,16 +288,6 @@
 					</div>
 				</div>
 
-				<div class="row">
-					<div class="col-sm-6 mb-3">
-						<label class="form-label" for="opzohubHomeBannerSide">侧栏 Banner 图片 URL</label>
-						<input id="opzohubHomeBannerSide" type="text" class="form-control" data-field="opzohub:home:banner:right:image" placeholder="https://..." />
-					</div>
-					<div class="col-sm-6 mb-3">
-						<label class="form-label" for="opzohubHomeBannerSideLink">侧栏 Banner 链接</label>
-						<input id="opzohubHomeBannerSideLink" type="text" class="form-control" data-field="opzohub:home:banner:right:link" placeholder="/topic/..." />
-					</div>
-				</div>
 
 				<div class="row">
 					<div class="col-sm-4 mb-3">

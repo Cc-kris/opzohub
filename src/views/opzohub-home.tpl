@@ -5,8 +5,8 @@
 			<img src="{brand.logo}" alt="{brand.logoAlt}" />
 			{{{else}}}
 			<span class="opzohub-logo-dot"></span>
-			<span>{brand.title}</span>
 			{{{end}}}
+			<span class="opzohub-site-title">{brand.title}</span>
 		</a>
 		<nav class="opzohub-main-nav" aria-label="Primary">
 			{{{each navItems}}}
@@ -53,9 +53,6 @@
 				<a href="{banners.heroCtaLink}">{banners.heroCtaText}</a>
 			</section>
 
-			<a class="opzohub-banner-slot {{{if banners.mainBannerImage}}}has-image{{{end}}}" href="{banners.mainBannerLink}" aria-label="首页横幅广告位">
-				{{{if banners.mainBannerImage}}}<img src="{banners.mainBannerImage}" alt="{banners.mainBannerTitle}" />{{{else}}}<span>{banners.mainBannerTitle}</span><em>{banners.mainBannerDesc}</em>{{{end}}}
-			</a>
 
 			<section class="opzohub-stats" aria-label="社区统计">
 				<article><span>优质内容</span><strong>{stats.posts}</strong><em>篇</em></article>
@@ -105,7 +102,7 @@
 					{{{end}}}
 					{{{else}}}<div class="opzohub-empty">暂无最新回复，发布或回复帖子后会自动出现</div>{{{end}}}
 				</div>
-				<div class="post-list" data-opzo-panel="newest">
+				<div class="post-list" data-opzo-panel="newest" data-opzo-count="{newestTopics.length}">
 					{{{if hasNewestTopics}}}
 					{{{each newestTopics}}}
 					<a class="post-row {{{if newestTopics.pinned}}}pinned{{{end}}} {{{if newestTopics.hot}}}hot{{{end}}}" href="{newestTopics.url}">
@@ -118,7 +115,7 @@
 					{{{end}}}
 					{{{else}}}<div class="opzohub-empty">暂无最新发布，创建主题后会自动出现</div>{{{end}}}
 				</div>
-				<div class="post-list" data-opzo-panel="popular">
+				<div class="post-list" data-opzo-panel="popular" data-opzo-count="{popularTopics.length}">
 					{{{if hasPopularTopics}}}
 					{{{each popularTopics}}}
 					<a class="post-row {{{if popularTopics.pinned}}}pinned{{{end}}} {{{if popularTopics.hot}}}hot{{{end}}}" href="{popularTopics.url}">
@@ -131,7 +128,7 @@
 					{{{end}}}
 					{{{else}}}<div class="opzohub-empty">暂无热门内容，有浏览和回复后会自动排序</div>{{{end}}}
 				</div>
-				<div class="post-list" data-opzo-panel="featured">
+				<div class="post-list" data-opzo-panel="featured" data-opzo-count="{featuredTabTopics.length}">
 					{{{if hasFeaturedTopics}}}
 					{{{each featuredTabTopics}}}
 					<a class="post-row {{{if featuredTabTopics.pinned}}}pinned{{{end}}} {{{if featuredTabTopics.hot}}}hot{{{end}}}" href="{featuredTabTopics.url}">
@@ -144,7 +141,7 @@
 					{{{end}}}
 					{{{else}}}<div class="opzohub-empty">暂无精华内容，设置热门/高赞主题后会自动出现</div>{{{end}}}
 				</div>
-				<a class="more-posts" data-opzo-more-link href="{config.relative_path}/recent">加载更多帖子</a>
+				<button class="more-posts" type="button" data-opzo-more-button data-opzo-feed="recent" data-opzo-api="{config.relative_path}/api/opzohub-home/more">加载更多帖子</button>
 			</section>
 		</main>
 
@@ -181,9 +178,6 @@
 				{{{else}}}<div class="opzohub-empty mini">暂无活跃用户</div>{{{end}}}
 			</section>
 
-			<a class="opzohub-side-banner {{{if banners.rightBannerImage}}}has-image{{{end}}}" href="{banners.rightBannerLink}" aria-label="侧栏广告位">
-				{{{if banners.rightBannerImage}}}<img src="{banners.rightBannerImage}" alt="{banners.rightBannerTitle}" />{{{else}}}<span>{banners.rightBannerTitle}</span><em>{banners.rightBannerDesc}</em>{{{end}}}
-			</a>
 
 			<section class="opzohub-card resources-card">
 				<div class="side-head"><h2>{resourceTitle}</h2><a href="{resourceUrl}">查看全部</a></div>
@@ -211,17 +205,70 @@
 (function () {
 	const root = document.querySelector('.opzohub-home');
 	if (!root) { return; }
+	const moreButton = root.querySelector('[data-opzo-more-button]');
+	function activePanel() {
+		return root.querySelector('[data-opzo-panel].active');
+	}
+	function renderTopic(topic) {
+		const a = document.createElement('a');
+		a.className = 'post-row' + (topic.pinned ? ' pinned' : '') + (topic.hot ? ' hot' : '');
+		a.href = topic.url || '#';
+		const badge = document.createElement('span');
+		badge.className = topic.pinned ? 'tag' : 'avatar';
+		badge.textContent = topic.badge || (topic.username || '?').slice(0, 1).toUpperCase();
+		const title = document.createElement('h3');
+		title.textContent = topic.title || '未命名主题';
+		const meta = document.createElement('p');
+		meta.textContent = [topic.username, topic.date, topic.categoryName].filter(Boolean).join(' · ');
+		const views = document.createElement('em');
+		views.textContent = topic.views || '0';
+		const replies = document.createElement('b');
+		replies.textContent = topic.replies || '0';
+		a.append(badge, title, meta, views, replies);
+		return a;
+	}
+	function setMoreState(text, disabled) {
+		if (!moreButton) { return; }
+		moreButton.textContent = text;
+		moreButton.disabled = !!disabled;
+		moreButton.classList.toggle('is-disabled', !!disabled);
+	}
 	root.querySelectorAll('[data-opzo-tab]').forEach((button) => {
 		button.addEventListener('click', () => {
 			const name = button.getAttribute('data-opzo-tab');
 			root.querySelectorAll('[data-opzo-tab]').forEach(item => item.classList.toggle('active', item === button));
 			root.querySelectorAll('[data-opzo-panel]').forEach(panel => panel.classList.toggle('active', panel.getAttribute('data-opzo-panel') === name));
-			const moreLink = root.querySelector('[data-opzo-more-link]');
-			const moreHref = button.getAttribute('data-opzo-more');
-			if (moreLink && moreHref) {
-				moreLink.setAttribute('href', moreHref);
+			if (moreButton) {
+				moreButton.setAttribute('data-opzo-feed', name);
+				setMoreState(moreButton.getAttribute('data-opzo-ended') === name ? '已经到底了' : '加载更多帖子', moreButton.getAttribute('data-opzo-ended') === name);
 			}
 		});
 	});
+	if (moreButton) {
+		moreButton.addEventListener('click', async () => {
+			const panel = activePanel();
+			if (!panel || moreButton.disabled) { return; }
+			const feed = moreButton.getAttribute('data-opzo-feed') || 'recent';
+			const start = parseInt(panel.getAttribute('data-opzo-count') || panel.querySelectorAll('.post-row').length, 10) || 0;
+			const api = moreButton.getAttribute('data-opzo-api');
+			setMoreState('加载中…', true);
+			try {
+				const res = await fetch(api + '?feed=' + encodeURIComponent(feed) + '&start=' + start + '&limit=10', { credentials: 'same-origin' });
+				if (!res.ok) { throw new Error('HTTP ' + res.status); }
+				const data = await res.json();
+				(data.topics || []).forEach(topic => panel.appendChild(renderTopic(topic)));
+				const nextStart = data.nextStart || (start + (data.topics || []).length);
+				panel.setAttribute('data-opzo-count', nextStart);
+				if (!data.hasMore || !(data.topics || []).length) {
+					moreButton.setAttribute('data-opzo-ended', feed);
+					setMoreState('已经到底了', true);
+				} else {
+					setMoreState('加载更多帖子', false);
+				}
+			} catch (err) {
+				setMoreState('加载失败，点击重试', false);
+			}
+		});
+	}
 }());
 </script>

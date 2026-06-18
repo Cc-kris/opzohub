@@ -227,21 +227,14 @@ function getHomeSeo(brand) {
 }
 
 function getHomeBanners() {
+	const defaultHeroImage = configValue('opzohub:home:hero:default:image') || 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1600&q=80';
 	return {
 		heroTitle: configValue('opzohub:home:hero:title') || 'AI赋能增长 · 跨境创造未来',
 		heroSubtitle: configValue('opzohub:home:hero:subtitle', 'opzohub:home:description') || '聚焦AI、跨境电商与独立站的实战经验分享平台',
 		heroEyebrow: configValue('opzohub:home:hero:eyebrow') || 'AI · CROSS-BORDER · INDEPENDENT SITE',
-		heroImage: configValue('opzohub:home:hero:image'),
+		heroImage: configValue('opzohub:home:hero:image', 'opzohub:home:banner:main:image', 'opzohub:home:banner:top') || defaultHeroImage,
 		heroCtaText: configValue('opzohub:home:hero:cta:text') || '立即加入',
-		heroCtaLink: localUrl(configValue('opzohub:home:hero:cta:link') || '/register'),
-		mainBannerImage: configValue('opzohub:home:banner:main:image', 'opzohub:home:banner:top'),
-		mainBannerLink: localUrl(configValue('opzohub:home:banner:main:link', 'opzohub:home:banner:top:link') || '#'),
-		mainBannerTitle: configValue('opzohub:home:banner:main:title') || 'Banner 广告位',
-		mainBannerDesc: configValue('opzohub:home:banner:main:desc') || '可接后台配置或插件投放',
-		rightBannerImage: configValue('opzohub:home:banner:right:image', 'opzohub:home:banner:side'),
-		rightBannerLink: localUrl(configValue('opzohub:home:banner:right:link', 'opzohub:home:banner:side:link') || '#'),
-		rightBannerTitle: configValue('opzohub:home:banner:right:title') || '侧栏 Banner 位',
-		rightBannerDesc: configValue('opzohub:home:banner:right:desc') || '预留后台/插件配置',
+		heroCtaLink: localUrl(configValue('opzohub:home:hero:cta:link', 'opzohub:home:banner:main:link', 'opzohub:home:banner:top:link') || '/register'),
 		vipTitle: configValue('opzohub:home:vip:title') || '加入opzohub VIP',
 		vipDesc: configValue('opzohub:home:vip:desc') || '解锁专属课程、会员内容与更多社区特权',
 		vipLink: localUrl(configValue('opzohub:home:vip:link') || '/register'),
@@ -279,10 +272,11 @@ async function getHomeCategories(uid) {
 }
 
 async function getTopicList(uid, sort = 'recent', stop = 9, options = {}) {
+	const start = Math.max(parseInt(options.start, 10) || 0, 0);
 	const params = {
 		uid: uid,
-		start: 0,
-		stop: Math.max(stop, 0),
+		start: start,
+		stop: start + Math.max(stop, 0),
 		sort: sort,
 		term: options.term || 'alltime',
 		query: {},
@@ -299,6 +293,20 @@ async function getTopicList(uid, sort = 'recent', stop = 9, options = {}) {
 		topicList = topicList.sort((a, b) => (parseInt(b.timestamp || 0, 10) || 0) - (parseInt(a.timestamp || 0, 10) || 0));
 	}
 	return normalizeTopicList(topicList, stop);
+}
+
+function getHomeFeedConfig(feed) {
+	switch (feed) {
+	case 'newest':
+		return { sort: 'create', orderBy: 'created' };
+	case 'popular':
+		return { sort: 'posts' };
+	case 'featured':
+		return { sort: 'votes' };
+	case 'recent':
+	default:
+		return { sort: 'recent' };
+	}
 }
 
 async function getSectionTopics(uid, section, stop, fallbackTopics, defaults = {}) {
@@ -403,6 +411,27 @@ function mergeTopicFallbacks(...lists) {
 	});
 	return merged;
 }
+
+
+exports.opzohubHomeMore = async function (req, res, next) {
+	try {
+		const feed = String(req.query.feed || 'recent');
+		const start = Math.max(parseInt(req.query.start, 10) || 0, 0);
+		const limit = Math.min(Math.max(parseInt(req.query.limit, 10) || 10, 1), 20);
+		const config = getHomeFeedConfig(feed);
+		const topics = await getTopicList(req.uid, config.sort, limit, {
+			start: start,
+			orderBy: config.orderBy,
+		});
+		res.json({
+			topics: topics,
+			hasMore: topics.length >= limit,
+			nextStart: start + topics.length,
+		});
+	} catch (err) {
+		next(err);
+	}
+};
 
 exports.opzohubHome = async function (req, res, next) {
 	try {
