@@ -47,7 +47,7 @@
     "notif.cta-new-chat": "Söhbətə bax",
     "notif.test.short": "Test bildirişləri",
     "notif.test.long": "Bu, bildirişlər e-poçtunun sınağıdır. Yardım göndər!",
-    "test.text1": "Bu e-poçt göndəricinin NodeBB üçün düzgün qurulduğunu yoxlamaq üçün test e-poçtudur.",
+    "test.text1": "Bu e-poçt göndəricinin OpzoHub üçün düzgün qurulduğunu yoxlamaq üçün test e-poçtudur.",
     "unsub.cta": "Parametrləri dəyişdirmək üçün bura klikləyin",
     "unsubscribe": "abunədən çıx",
     "unsub.success": "Siz daha <strong>%1</strong> poçt siyahısından e-məktublar almayacaqsınız",

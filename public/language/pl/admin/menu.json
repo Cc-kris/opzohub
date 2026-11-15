@@ -99,6 +99,6 @@
 
 	"connection-lost": "Połączenie z %1 zostało utracone, próba ponownego połączenia...",
 
-	"alerts.version": "Forum działa dzięki <strong>NodeBB v%1</strong>",
+	"alerts.version": "Forum działa dzięki <strong>OpzoHub v%1</strong>",
 	"alerts.upgrade": "Aktualizacja do v%1"
 }

@@ -99,6 +99,6 @@
 
 	"connection-lost": "Povezava z %1 je bila izgubljena, poskus ponovne povezave...",
 
-	"alerts.version": "Teče <strong>NodeBB v%1</strong>",
+	"alerts.version": "Teče <strong>OpzoHub v%1</strong>",
 	"alerts.upgrade": "Nadgradi na v%1"
 }

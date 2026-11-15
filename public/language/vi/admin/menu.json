@@ -99,6 +99,6 @@
 
 	"connection-lost": "Kết nối với %1 đã bị mất, cố gắng kết nối lại...",
 
-	"alerts.version": "Đang chạy <strong>NodeBB v%1</strong>",
+	"alerts.version": "Đang chạy <strong>OpzoHub v%1</strong>",
 	"alerts.upgrade": "Nâng cấp lên v%1"
 }

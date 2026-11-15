@@ -22,7 +22,7 @@
 	"mongo.bytes-out": "Byte sendt",
 	"mongo.num-requests": "Førespurnadar",
 	"mongo.raw-info": "MongoDB Råinformasjon",
-	"mongo.unauthorized": "NodeBB klarte ikkje spørre MongoDB for relevant statestikk. Sjekk om NodeBB brukeren er autorisert som cluster monitor for admin databasen",
+	"mongo.unauthorized": "OpzoHub klarte ikkje spørre MongoDB for relevant statestikk. Sjekk om OpzoHub brukeren er autorisert som cluster monitor for admin databasen",
 
 	"redis": "Redis",
 	"redis.version": "Redis Versjon",

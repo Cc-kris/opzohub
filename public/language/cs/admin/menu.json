@@ -99,6 +99,6 @@
 
 	"connection-lost": "Připojení k %1 bylo ztraceno, snaha o opětovné připojení…",
 
-	"alerts.version": "Spušteno <strong>NodeBB v%1</strong>",
+	"alerts.version": "Spušteno <strong>OpzoHub v%1</strong>",
 	"alerts.upgrade": "Aktualizovat na v%1"
 }

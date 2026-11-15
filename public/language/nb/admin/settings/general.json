@@ -36,7 +36,7 @@
 	"maskable-icon": "Maskerbart (Hjem-skjerm) ikon",
 	"maskable-icon.help": "Anbefalt størrelse og format: 512x512, kun PNG-format. Hvis ingen maskerbart ikon er spesifisert, brukes berøringsikon som reserve.",
 	"screenshot": "Screenshot",
-	"screenshot.help": "Recommended size and format: between 320px and 3480px, JPG and PNG format only. If no screenshot is specified, NodeBB will fall back to a generic screenshot",
+	"screenshot.help": "Recommended size and format: between 320px and 3480px, JPG and PNG format only. If no screenshot is specified, OpzoHub will fall back to a generic screenshot",
 	"outgoing-links": "Utgående lenker",
 	"outgoing-links.warning-page": "Bruk varslingsside for utgående lenker",
 	"search": "Søk",

@@ -5,7 +5,7 @@
 	"consent.acceptance": "Elfogadás szövege",
 	"consent.link-text": "Irányelv link felirata",
 	"consent.link-url": "Irányelv link URL-je",
-	"consent.blank-localised-default": "Hagyd üresen a NodeBB alapértelmezett használatához (lefordított)",
+	"consent.blank-localised-default": "Hagyd üresen a OpzoHub alapértelmezett használatához (lefordított)",
 	"settings": "Beállítások",
 	"cookie-domain": "Munkamenet süti domain",
 	"max-user-sessions": "Aktív munkamenetek maximális száma felhasználónként",

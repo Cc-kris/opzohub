@@ -5,7 +5,7 @@
 	"consent.acceptance": "Mensagem de aceitação",
 	"consent.link-text": "Policy Link Text",
 	"consent.link-url": "Ligação URL da Política",
-	"consent.blank-localised-default": "Leave blank to use NodeBB localised defaults",
+	"consent.blank-localised-default": "Leave blank to use OpzoHub localised defaults",
 	"settings": "Definições",
 	"cookie-domain": "Session cookie domain",
 	"max-user-sessions": "Max active sessions per user",

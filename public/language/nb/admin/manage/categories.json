@@ -91,7 +91,7 @@
 	"federation.disabled-cta": "Federation Settings &rarr;",
 	"federation.syncing-header": "Synkronisering",
 	"federation.syncing-intro": "A category can follow a \"Group Actor\" via the ActivityPub protocol. If content is received from one of the actors listed below, it will be automatically added to this category.",
-	"federation.syncing-caveat": "N.B. Setting up syncing here establishes a one-way synchronization. NodeBB attempts to subscribe/follow the actor, but the reverse cannot be assumed.",
+	"federation.syncing-caveat": "N.B. Setting up syncing here establishes a one-way synchronization. OpzoHub attempts to subscribe/follow the actor, but the reverse cannot be assumed.",
 	"federation.syncing-none": "This category is not currently following anybody.",
 	"federation.syncing-add": "Synkroniser med...",
 	"federation.syncing-actorUri": "Aktør",

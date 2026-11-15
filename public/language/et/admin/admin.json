@@ -1,13 +1,13 @@
 {
-	"alert.confirm-rebuild-and-restart": "Are you sure you wish to rebuild and restart NodeBB?",
-	"alert.confirm-restart": "Oled kindel, et soovid taaslaadida NodeBB?",
+	"alert.confirm-rebuild-and-restart": "Are you sure you wish to rebuild and restart OpzoHub?",
+	"alert.confirm-restart": "Oled kindel, et soovid taaslaadida OpzoHub?",
 
-	"acp-title": "%1 | NodeBB Administraatori kontrollpaneel",
+	"acp-title": "%1 | OpzoHub Administraatori kontrollpaneel",
 	"settings-header-contents": "Sisu",
 	"changes-saved": "Muudatused salvestatud",
-	"changes-saved-message": "Your changes to the NodeBB configuration have been saved.",
+	"changes-saved-message": "Your changes to the OpzoHub configuration have been saved.",
 	"changes-not-saved": "Changes Not Saved",
-	"changes-not-saved-message": "NodeBB-l tekkis probleem su muudatuste salvestamisel. (%1)",
+	"changes-not-saved-message": "OpzoHub-l tekkis probleem su muudatuste salvestamisel. (%1)",
 	"save-changes": "Salvesta muudatused",
 	"min": "Min:",
 	"max": "Max:",

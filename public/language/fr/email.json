@@ -47,7 +47,7 @@
     "notif.cta-new-chat": "Voir les discussions",
     "notif.test.short": "Tester les notifications",
     "notif.test.long": "Ceci est un test de notifications par e-mail. Envoyez de l'aide !",
-    "test.text1": "Ceci est un e-mail de test pour vérifier que l’envoi de mails est correctement configuré pour NodeBB.",
+    "test.text1": "Ceci est un e-mail de test pour vérifier que l’envoi de mails est correctement configuré pour OpzoHub.",
     "unsub.cta": "Cliquer ici pour modifier ces paramètres",
     "unsubscribe": "Se désinscrire",
     "unsub.success": "Vous ne recevrez plus d’e-mails de la liste de diffusion <strong>%1</strong>",

@@ -14,7 +14,7 @@
 	"smtp-transport.service": "서비스 선택",
 	"smtp-transport.service-custom": "사용자 정의",
 	"smtp-transport.service-help": "위의 서비스 이름을 선택하여 해당 서비스에 대한 알려진 정보를 사용하세요. 또는 \"사용자 정의\"를 선택하고 아래 세부 정보를 입력하세요.",
-	"smtp-transport.gmail-warning1": "만약 Gmail을 이메일 제공자로 사용하려 한다면, NodeBB를 성공적으로 인증하기 위해 \"앱 비밀번호\"를 생성해야 합니다.  <a href=\"https://myaccount.google.com/apppasswords\">앱 비밀번호 <i class=\"fa fa-external-link\"></i></a> 페이지에서 생성할 수 있습니다.",
+	"smtp-transport.gmail-warning1": "만약 Gmail을 이메일 제공자로 사용하려 한다면, OpzoHub를 성공적으로 인증하기 위해 \"앱 비밀번호\"를 생성해야 합니다.  <a href=\"https://myaccount.google.com/apppasswords\">앱 비밀번호 <i class=\"fa fa-external-link\"></i></a> 페이지에서 생성할 수 있습니다.",
 	"smtp-transport.gmail-warning2": "이 작업에 대한 자세한 정보는, <a href=\"https://nodemailer.com/usage/using-gmail/\">이 문제에 관한 NodeMailer 문서 <i class=\"fa fa-external-link\"></i></a> 를 참조하세요. 대안으로는 SendGrid, Mailgun 등과 같은 타사 이메일 플러그인을 활용할 수 있습니다. <a href=\"../extend/plugins\">사용 가능한 플러그인</a>은 여기에서 확인할 수 있습니다.",
 	"smtp-transport.auto-enable-toast": "SMTP 전송을 구성하고 있는 것으로 보입니다. \"SMTP 전송\" 옵션을 사용하도록 설정했습니다.",
 	"smtp-transport.host": "SMTP 호스트",

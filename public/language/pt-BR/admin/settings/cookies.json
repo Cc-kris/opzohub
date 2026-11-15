@@ -5,7 +5,7 @@
 	"consent.acceptance": "Mensagem de aprovação",
 	"consent.link-text": "Texto do Link da Política",
 	"consent.link-url": "Link para Política de Privacidade",
-	"consent.blank-localised-default": "Deixar em branco para utilizar os padrões de localidade do NodeBB",
+	"consent.blank-localised-default": "Deixar em branco para utilizar os padrões de localidade do OpzoHub",
 	"settings": "Configurações",
 	"cookie-domain": "Domínio da sessão de cookie",
 	"max-user-sessions": "Máximo de sessões ativas por usuário",

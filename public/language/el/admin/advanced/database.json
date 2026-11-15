@@ -22,7 +22,7 @@
 	"mongo.bytes-out": "Bytes εκτός",
 	"mongo.num-requests": "Αριθμός αιτημάτων",
 	"mongo.raw-info": "Πληροφορίες MongoDB",
-	"mongo.unauthorized": "Το NodeBB δε μπόρεσε να υποβάλει ερώτημα στη βάση δεδομένων MongoDB για σχετικά στατιστικά στοιχεία. Βεβαιωθείτε ότι ο χρήστης που χρησιμοποιείται από το NodeBB περιέχει τον ρόλο &quot;clusterMonitor&quot; για τη βάση δεδομένων &quot;διαχειριστή&quot;.",
+	"mongo.unauthorized": "Το OpzoHub δε μπόρεσε να υποβάλει ερώτημα στη βάση δεδομένων MongoDB για σχετικά στατιστικά στοιχεία. Βεβαιωθείτε ότι ο χρήστης που χρησιμοποιείται από το OpzoHub περιέχει τον ρόλο &quot;clusterMonitor&quot; για τη βάση δεδομένων &quot;διαχειριστή&quot;.",
 
 	"redis": "Redis",
 	"redis.version": "Έκδοση Redis",

@@ -1,13 +1,13 @@
 {
-	"alert.confirm-rebuild-and-restart": "Ви впевнені, що хочете перебудувати та перезавантажити NodeBB?",
-	"alert.confirm-restart": "Ви впевнені, що бажаєте перезавантажити NodeBB?",
+	"alert.confirm-rebuild-and-restart": "Ви впевнені, що хочете перебудувати та перезавантажити OpzoHub?",
+	"alert.confirm-restart": "Ви впевнені, що бажаєте перезавантажити OpzoHub?",
 
-	"acp-title": "%1 | Адмінська Панель Керування NodeBB",
+	"acp-title": "%1 | Адмінська Панель Керування OpzoHub",
 	"settings-header-contents": "Зміст",
 	"changes-saved": "Changes Saved",
-	"changes-saved-message": "Your changes to the NodeBB configuration have been saved.",
+	"changes-saved-message": "Your changes to the OpzoHub configuration have been saved.",
 	"changes-not-saved": "Changes Not Saved",
-	"changes-not-saved-message": "NodeBB encountered a problem saving your changes. (%1)",
+	"changes-not-saved-message": "OpzoHub encountered a problem saving your changes. (%1)",
 	"save-changes": "Save changes",
 	"min": "Min:",
 	"max": "Max:",

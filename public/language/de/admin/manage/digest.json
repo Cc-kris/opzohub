@@ -1,7 +1,7 @@
 {
 	"lead": "Nachfolgend ist eine Auflistung der Zustellungsstatistiken und -zeiten zusammengefasst.",
 	"disclaimer": "Bitte beachten Sie, dass die Zustellung von E-Mails aufgrund der Funktionsweise von E-Mail-Technologien nicht garantiert werden kann. Ob eine E-Mail im Posteingang des Benutzers auf dem an Empfängerserver letztendlich ankommt, hängt von vielen Variablen ab, z. B. von der Reputation des Servers, von IP-Adressen, die auf der schwarzen Liste stehen, und davon, ob DKIM/SPF/DMARC konfiguriert ist.",
-	"disclaimer-continued": "Eine erfolgreiche Zustellung zeigt an, dass die Nachricht erfolgreich von NodeBB gesendet und vom Empfänger-Server bestätigt wurde. Es bedeutet nicht, dass die E-Mail im Posteingang gelandet ist. Um beste Ergebnisse zu erzielen, empfehlen wir, einen E-Mail-Zustelldienst eines Drittanbieters wie <a href=\"https://sendgrid.com/why-sendgrid/\">SendGrid</a> zu verwenden.",
+	"disclaimer-continued": "Eine erfolgreiche Zustellung zeigt an, dass die Nachricht erfolgreich von OpzoHub gesendet und vom Empfänger-Server bestätigt wurde. Es bedeutet nicht, dass die E-Mail im Posteingang gelandet ist. Um beste Ergebnisse zu erzielen, empfehlen wir, einen E-Mail-Zustelldienst eines Drittanbieters wie <a href=\"https://sendgrid.com/why-sendgrid/\">SendGrid</a> zu verwenden.",
 
 	"user": "Benutzer",
 	"subscription": "Abonnement Typ",

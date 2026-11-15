@@ -47,7 +47,7 @@
     "notif.cta-new-chat": "Chat weergeven",
     "notif.test.short": "Testen van notificaties",
     "notif.test.long": "Dit is een test van de notificaties e-mail. Stuur hulp!",
-    "test.text1": "Dit is een testbericht om te verifiëren dat NodeBB de e-mailberichtservice correct heeft opgezet.",
+    "test.text1": "Dit is een testbericht om te verifiëren dat OpzoHub de e-mailberichtservice correct heeft opgezet.",
     "unsub.cta": "Klik hier om deze instellingen te wijzigen",
     "unsubscribe": "uitschrijven",
     "unsub.success": "U zult niet langer e-mails ontvangen van de <strong>%1</strong> mailing lijst",

@@ -91,7 +91,7 @@
 	"federation.disabled-cta": "Configuration de la fédération &rarr;",
 	"federation.syncing-header": "Synchronisation",
 	"federation.syncing-intro": "Une catégorie peut suivre un « acteur de groupe » via ActivityPub. Le contenu provenant de ces acteurs sera automatiquement ajouté à cette catégorie.",
-	"federation.syncing-caveat": "Remarque : la synchronisation ici est unidirectionnelle. NodeBB suit l’acteur, mais l’inverse n’est pas garanti.",
+	"federation.syncing-caveat": "Remarque : la synchronisation ici est unidirectionnelle. OpzoHub suit l’acteur, mais l’inverse n’est pas garanti.",
 	"federation.syncing-none": "Aucun suivi pour cette catégorie pour le moment.",
 	"federation.syncing-add": "Synchroniser avec…",
 	"federation.syncing-actorUri": "Acteur",

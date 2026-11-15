@@ -47,7 +47,7 @@
     "notif.cta-new-chat": "Xem Trò Chuyện",
     "notif.test.short": "Thông Báo Kiểm Tra",
     "notif.test.long": "Đây là một kiểm tra thông báo email. Gửi giúp đỡ!",
-    "test.text1": "Đây là email thử nghiệm để kiểm tra trình gửi email NodeBB của bạn đã cài đặt đúng.",
+    "test.text1": "Đây là email thử nghiệm để kiểm tra trình gửi email OpzoHub của bạn đã cài đặt đúng.",
     "unsub.cta": "Nhấp vào đây để thay đổi các cài đặt đó",
     "unsubscribe": "hủy đăng ký",
     "unsub.success": "Bạn sẽ không còn nhận được email từ danh sách gửi thư <strong>%1</strong>",

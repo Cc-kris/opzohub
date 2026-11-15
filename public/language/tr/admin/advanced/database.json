@@ -22,7 +22,7 @@
 	"mongo.bytes-out": "gönderilen bayt",
 	"mongo.num-requests": "İsteklerin Sayısı",
 	"mongo.raw-info": "İşlenmemiş MongoDB Bilgisi",
-	"mongo.unauthorized": "NodeBB, ilgili istatistikler için MongoDB'yi sorgulayamadı. Lütfen NodeBB'yi kullanan kişinin &quot;admin&quot; veri bankasında &quot;clusterMonitor&quot; listesinde bulunduğuna emin olunuz.",
+	"mongo.unauthorized": "OpzoHub, ilgili istatistikler için MongoDB'yi sorgulayamadı. Lütfen OpzoHub'yi kullanan kişinin &quot;admin&quot; veri bankasında &quot;clusterMonitor&quot; listesinde bulunduğuna emin olunuz.",
 
 	"redis": "Redis",
 	"redis.version": "Redis Sürümü",

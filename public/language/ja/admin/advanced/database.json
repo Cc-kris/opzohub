@@ -22,7 +22,7 @@
 	"mongo.bytes-out": "バイトアウト",
 	"mongo.num-requests": "リクエスト数",
 	"mongo.raw-info": "MongoDBのRaw情報",
-	"mongo.unauthorized": "NodeBBはMongoDBデータベースから関連する統計をクエリできませんでした。NodeBBが使用するユーザーに「admin」データベースの「clusterMonitor」ロールが含まれていることを確認してください。",
+	"mongo.unauthorized": "OpzoHubはMongoDBデータベースから関連する統計をクエリできませんでした。OpzoHubが使用するユーザーに「admin」データベースの「clusterMonitor」ロールが含まれていることを確認してください。",
 
 	"redis": "Redis",
 	"redis.version": "Redisのバージョン",

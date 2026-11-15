@@ -99,6 +99,6 @@
 
 	"connection-lost": "与  %1  的连接已丢失，正尝试重新连接...",
 
-	"alerts.version": "正在运行 <strong>NodeBB v%1</strong>",
+	"alerts.version": "正在运行 <strong>OpzoHub v%1</strong>",
 	"alerts.upgrade": "升级到 v%1"
 }

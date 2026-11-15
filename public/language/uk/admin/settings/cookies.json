@@ -5,7 +5,7 @@
 	"consent.acceptance": "Текст погодження",
 	"consent.link-text": "Текст посилання на політику",
 	"consent.link-url": "Policy Link URL",
-	"consent.blank-localised-default": "Залишити пустими, щоб використати стандартні локалізовані тексти NodeBB",
+	"consent.blank-localised-default": "Залишити пустими, щоб використати стандартні локалізовані тексти OpzoHub",
 	"settings": "Налаштування",
 	"cookie-domain": "Домен куки сесії",
 	"max-user-sessions": "Max active sessions per user",

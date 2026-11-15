@@ -6,8 +6,8 @@
     "revert-theme": "Revert Theme",
     "current-theme": "القالب المستخدم حالياً",
     "no-themes": "لم يتم العثور على قوالب مثبتة",
-    "revert-confirm": "هل أنت متأكد من أنك ترغب في استعادة قااب NodeBB الافتراضي؟",
+    "revert-confirm": "هل أنت متأكد من أنك ترغب في استعادة قااب OpzoHub الافتراضي؟",
     "theme-changed": "تم تغيير القالب",
-    "revert-success": "لقد قمت بنجاح بإستعادة القالب الأساسي لـNodeBB",
-    "restart-to-activate": "يرجى إعادة بناء وإعادة تشغيل NodeBB لتنشيط هذا الثيم."
+    "revert-success": "لقد قمت بنجاح بإستعادة القالب الأساسي لـOpzoHub",
+    "restart-to-activate": "يرجى إعادة بناء وإعادة تشغيل OpzoHub لتنشيط هذا الثيم."
 }

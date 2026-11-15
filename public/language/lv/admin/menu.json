@@ -99,6 +99,6 @@
 
 	"connection-lost": "Savienojums ar %1 ir pārtraukts, mēģina no jauna savienoties...",
 
-	"alerts.version": "Palaists <strong>NodeBB v%1</strong>",
+	"alerts.version": "Palaists <strong>OpzoHub v%1</strong>",
 	"alerts.upgrade": "Uzlabot uz v%1"
 }

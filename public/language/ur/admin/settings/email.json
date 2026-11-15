@@ -14,7 +14,7 @@
 	"smtp-transport.service": "سروس منتخب کریں",
 	"smtp-transport.service-custom": "مرضی کی سروس",
 	"smtp-transport.service-help": "اوپر دیے گئے سروس کے نام کو منتخب کریں تاکہ اس کے معروف ڈیٹا کو استعمال کیا جا سکے۔ یا 'مرضی کی سروس' منتخب کریں اور نیچے اس کے تفصیلات درج کریں۔",
-	"smtp-transport.gmail-warning1": "اگر آپ Gmail استعمال کر رہے ہیں، تو آپ کو NodeBB کے تصدیقی ڈیٹا استعمال کرنے کے لیے 'ایپلیکیشن پاس ورڈ' بنانا ہوگا۔ آپ اسے <a href=\"https://myaccount.google.com/apppasswords\">ایپلیکیشن پاس ورڈز<i class=\"fa fa-external-link\"></i></a> صفحہ پر بنا سکتے ہیں۔",
+	"smtp-transport.gmail-warning1": "اگر آپ Gmail استعمال کر رہے ہیں، تو آپ کو OpzoHub کے تصدیقی ڈیٹا استعمال کرنے کے لیے 'ایپلیکیشن پاس ورڈ' بنانا ہوگا۔ آپ اسے <a href=\"https://myaccount.google.com/apppasswords\">ایپلیکیشن پاس ورڈز<i class=\"fa fa-external-link\"></i></a> صفحہ پر بنا سکتے ہیں۔",
 	"smtp-transport.gmail-warning2": "اس حل کے بارے میں مزید معلومات کے لیے، <a href=\"https://nodemailer.com/usage/using-gmail/\">براہ کرم NodeMailer کے اس مسئلے کے بارے میں یہ مضمون دیکھیں<i class=\"fa fa-external-link\"></i></a>۔ ایک اور حل یہ ہوگا کہ تیسری پارٹی کی ای میل پلگ ان استعمال کی جائے، جیسے کہ 'SendGrid'، 'Mailgun' وغیرہ۔ <a href=\"../extend/plugins\">یہاں دستیاب پلگ انز دیکھیں</a>۔",
 	"smtp-transport.auto-enable-toast": "ایسا لگتا ہے کہ آپ ایسی فعالیت ترتیب دے رہے ہیں جس کے لیے SMTP ٹرانسپورٹ کی ضرورت ہے۔ ہم نے آپ کے لیے 'SMTP ٹرانسپورٹ' ترتیب کو فعال کر دیا ہے۔",
 	"smtp-transport.host": "SMTP سرور",

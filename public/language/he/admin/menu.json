@@ -99,6 +99,6 @@
 
 	"connection-lost": "החיבור ל-%1 אבד, מנסה להתחבר מחדש...",
 
-	"alerts.version": "מעודכן ל-<strong>NodeBB v%1</strong>",
+	"alerts.version": "מעודכן ל-<strong>OpzoHub v%1</strong>",
 	"alerts.upgrade": "שדרגו ל v%1"
 }

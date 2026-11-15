@@ -1,13 +1,13 @@
 {
-	"alert.confirm-rebuild-and-restart": "Наистина ли искате да изградите повторно и да рестартирате NodeBB?",
-	"alert.confirm-restart": "Наистина ли искате да рестартирате NodeBB?",
+	"alert.confirm-rebuild-and-restart": "Наистина ли искате да изградите повторно и да рестартирате OpzoHub?",
+	"alert.confirm-restart": "Наистина ли искате да рестартирате OpzoHub?",
 
-	"acp-title": "%1 | Контролен панел за администратори на NodeBB",
+	"acp-title": "%1 | Контролен панел за администратори на OpzoHub",
 	"settings-header-contents": "Съдържание",
 	"changes-saved": "Промените са запазени",
-	"changes-saved-message": "Промените Ви в настройките на NodeBB  бяха запазени.",
+	"changes-saved-message": "Промените Ви в настройките на OpzoHub  бяха запазени.",
 	"changes-not-saved": "Промените не са запазени",
-	"changes-not-saved-message": "Възникна проблем при запазването на промените Ви по NodeBB. (%1)",
+	"changes-not-saved-message": "Възникна проблем при запазването на промените Ви по OpzoHub. (%1)",
 	"save-changes": "Запазване на промените",
 	"min": "Мин.:",
 	"max": "Макс.:",

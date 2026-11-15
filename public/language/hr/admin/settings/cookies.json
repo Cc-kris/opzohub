@@ -5,7 +5,7 @@
 	"consent.acceptance": "Poruka prihvaćanja",
 	"consent.link-text": "Odrednice Poveznice Tekst",
 	"consent.link-url": "Policy Link URL",
-	"consent.blank-localised-default": "Pusti prazno za zadanu NodeBB lokalizaciju",
+	"consent.blank-localised-default": "Pusti prazno za zadanu OpzoHub lokalizaciju",
 	"settings": "Postavke",
 	"cookie-domain": "Sesija kolačić domene",
 	"max-user-sessions": "Max active sessions per user",

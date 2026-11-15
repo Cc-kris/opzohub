@@ -99,6 +99,6 @@
 
 	"connection-lost": "%1에 대한 연결이 끊겼습니다.<br />다시 연결을 시도 중...",
 
-	"alerts.version": "실행 중 <strong>NodeBB v%1</strong>",
+	"alerts.version": "실행 중 <strong>OpzoHub v%1</strong>",
 	"alerts.upgrade": "v%1으로 업그레이드"
 }

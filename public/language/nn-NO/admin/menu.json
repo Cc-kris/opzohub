@@ -99,6 +99,6 @@
 
 	"connection-lost": "Tilkobling til %1 mistet, prøver koble til... ",
 
-	"alerts.version": "Kjører <strong>NodeBB versjon %1</strong>",
+	"alerts.version": "Kjører <strong>OpzoHub versjon %1</strong>",
 	"alerts.upgrade": "Oppgrader til versjon %1"
 }

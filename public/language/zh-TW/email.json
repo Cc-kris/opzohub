@@ -47,7 +47,7 @@
     "notif.cta-new-chat": "查看聊天",
     "notif.test.short": "測試通知",
     "notif.test.long": "這是一個測試的通知郵件。",
-    "test.text1": "這是一封測試郵件，用來驗證 NodeBB 的郵件設定是否正確。",
+    "test.text1": "這是一封測試郵件，用來驗證 OpzoHub 的郵件設定是否正確。",
     "unsub.cta": "點擊這裡修改這些設定",
     "unsubscribe": "退訂",
     "unsub.success": "您將不再收到來自<strong>%1</strong>郵寄名單的郵件",

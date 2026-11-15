@@ -99,6 +99,6 @@
 
 	"connection-lost": "%1 ilə əlaqə kəsildi, yenidən qoşulmağa cəhd edilir...",
 
-	"alerts.version": "<strong>NodeBB v% 1</strong> işləyir",
+	"alerts.version": "<strong>OpzoHub v% 1</strong> işləyir",
 	"alerts.upgrade": "v% 1 səviyyəsinə yüksəlt"
 }

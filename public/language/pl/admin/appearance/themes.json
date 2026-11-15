@@ -6,8 +6,8 @@
     "revert-theme": "Przywróć styl",
     "current-theme": "Aktualny styl",
     "no-themes": "Brak zainstalowanych stylów",
-    "revert-confirm": "Czy na pewno chcesz przywrócić domyślny styl NodeBB?",
+    "revert-confirm": "Czy na pewno chcesz przywrócić domyślny styl OpzoHub?",
     "theme-changed": "Styl zmieniony",
-    "revert-success": "Pomyślnie przywrócono domyślny styl NodeBB.",
-    "restart-to-activate": "Proszę przebudować i zrestartować NodeBB aby w pełni aktywować ten styl."
+    "revert-success": "Pomyślnie przywrócono domyślny styl OpzoHub.",
+    "restart-to-activate": "Proszę przebudować i zrestartować OpzoHub aby w pełni aktywować ten styl."
 }

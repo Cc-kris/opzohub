@@ -47,7 +47,7 @@
     "notif.cta-new-chat": "Csevegés megnézése",
     "notif.test.short": "Értesítések tesztelése",
     "notif.test.long": "Ez egy teszt email az értesítésekről. Küldj segítséget!",
-    "test.text1": "Ez egy teszt levél, ami által ellenőrizzük, hogy a levelező helyesen lett e beállítva a NodeBB-ben.",
+    "test.text1": "Ez egy teszt levél, ami által ellenőrizzük, hogy a levelező helyesen lett e beállítva a OpzoHub-ben.",
     "unsub.cta": "Kattintson ide a beállítások módosításához",
     "unsubscribe": "Leiratkozás",
     "unsub.success": "Nem fog kapni több email a következő <strong>%1</strong> email fiókból",

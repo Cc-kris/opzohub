@@ -54,7 +54,7 @@
     "notifications.loading": "Загружаем уведомления",
     "chats.loading": "Загружаем чаты",
     "drafts.loading": "Загружаем черновики",
-    "motd.welcome": "Добро пожаловать в NodeBB, платформу будущего для общения.",
+    "motd.welcome": "Добро пожаловать в OpzoHub, платформу будущего для общения.",
     "alert.success": "Успешно",
     "alert.error": "Ошибка",
     "alert.warning": "Warning",

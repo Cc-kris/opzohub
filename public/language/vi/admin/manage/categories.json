@@ -91,7 +91,7 @@
 	"federation.disabled-cta": "Cài Đặt Liên Đoàn &rarr;",
 	"federation.syncing-header": "Đồng bộ hóa",
 	"federation.syncing-intro": "Một danh mục có thể theo sau một \"Tác nhân nhóm\" thông qua giao thức ActPub. Nếu nội dung được nhận từ một trong những tác nhân được liệt kê bên dưới, nội dung đó sẽ tự động được thêm vào danh mục này.",
-	"federation.syncing-caveat": "N.B. Việc thiết lập đồng bộ hóa ở đây sẽ thiết lập đồng bộ hóa một chiều. NodeBB cố gắng đăng ký/theo dõi tác nhân, nhưng không thể giả định điều ngược lại.",
+	"federation.syncing-caveat": "N.B. Việc thiết lập đồng bộ hóa ở đây sẽ thiết lập đồng bộ hóa một chiều. OpzoHub cố gắng đăng ký/theo dõi tác nhân, nhưng không thể giả định điều ngược lại.",
 	"federation.syncing-none": "Danh mục này hiện không có ai theo dõi.",
 	"federation.syncing-add": "Đồng bộ hóa với...",
 	"federation.syncing-actorUri": "Tác nhân",

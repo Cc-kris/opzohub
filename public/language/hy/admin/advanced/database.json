@@ -22,7 +22,7 @@
 	"mongo.bytes-out": "Bytes Out",
 	"mongo.num-requests": "Հարցումների քանակը",
 	"mongo.raw-info": "MongoDB Raw տեղեկատվություն",
-	"mongo.unauthorized": "NodeBB-ն չկարողացավ հարցումներ կատարել MongoDB տվյալների բազայում համապատասխան վիճակագրության համար: Խնդրում ենք համոզվել, որ NodeBB-ի կողմից օգտագործվող օգտատերը պարունակում է &laquo;clusterMonitor&raquo; դերը &laquo;ադմինիստրատորի&raquo; տվյալների բազա։",
+	"mongo.unauthorized": "OpzoHub-ն չկարողացավ հարցումներ կատարել MongoDB տվյալների բազայում համապատասխան վիճակագրության համար: Խնդրում ենք համոզվել, որ OpzoHub-ի կողմից օգտագործվող օգտատերը պարունակում է &laquo;clusterMonitor&raquo; դերը &laquo;ադմինիստրատորի&raquo; տվյալների բազա։",
 
 	"redis": "Redis",
 	"redis.version": "Redis տարբերակ ",

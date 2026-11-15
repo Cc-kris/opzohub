@@ -99,6 +99,6 @@
 
 	"connection-lost": "%1 への接続が切断されました。再接続を試みています...",
 
-	"alerts.version": "<strong>NodeBB v%1</strong>を実行中",
+	"alerts.version": "<strong>OpzoHub v%1</strong>を実行中",
 	"alerts.upgrade": "v%1にアップグレード"
 }

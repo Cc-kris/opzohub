@@ -91,7 +91,7 @@
 	"federation.disabled-cta": "Nastavení federace &rarr;",
 	"federation.syncing-header": "Synchronizace",
 	"federation.syncing-intro": "Kategorie může sledovat „Group Actora“ prostřednictvím protokolu ActivityPub. Pokud bude obsah přijat od některého z níže uvedených actorů, bude automaticky přidán do této kategorie.",
-	"federation.syncing-caveat": "Poznámka: Nastavení synchronizace zde vytváří jednostrannou synchronizaci. NodeBB se pokusí přihlásit k odběru/sledovat aktéra, ale opačný směr nelze předpokládat.",
+	"federation.syncing-caveat": "Poznámka: Nastavení synchronizace zde vytváří jednostrannou synchronizaci. OpzoHub se pokusí přihlásit k odběru/sledovat aktéra, ale opačný směr nelze předpokládat.",
 	"federation.syncing-none": "Tato kategorie momentálně nikoho nesleduje.",
 	"federation.syncing-add": "Synchronizovat s....",
 	"federation.syncing-actorUri": "Actor",

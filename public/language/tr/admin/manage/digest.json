@@ -1,7 +1,7 @@
 {
 	"lead": "Özet teslim istatistiklerinin ve saatlerinin bir listesi aşağıda görüntülenmektedir.",
 	"disclaimer": "E-posta teknolojileri nedeniyle e-posta iletiminin garanti olmadığını hatırlatmak isteriz. Bir e-postanın kullanıcıların e-posta gelen kutusuna ulaşmasını etki eden pek çok faktör mevcut. Bu faktörlerin bazıları şunlar: kullanılan sunucu tanınırlığı, karalisteye alınan IP adresleri, DKIM/SPF/DMARC ayarlarının yapılıp yapılmadığı...",
-	"disclaimer-continued": "\"Başarılı Gönderim\" e-postanın NodeBB tarafından başarıyla gönderildiği ve alıcı sunucu tarafından gönderimin onaylandığı anlamına gelir. E-postanın \"Gelen Kutusu\"na ulaştığı anlamına gelmez. En iyi sonuçlar için <a href=\"https://sendgrid.com/why-sendgrid/\">SendGrid</a> gibi üçüncü parti e-posta teslim servislerini kullanmanızı tavsiye ederiz. ",
+	"disclaimer-continued": "\"Başarılı Gönderim\" e-postanın OpzoHub tarafından başarıyla gönderildiği ve alıcı sunucu tarafından gönderimin onaylandığı anlamına gelir. E-postanın \"Gelen Kutusu\"na ulaştığı anlamına gelmez. En iyi sonuçlar için <a href=\"https://sendgrid.com/why-sendgrid/\">SendGrid</a> gibi üçüncü parti e-posta teslim servislerini kullanmanızı tavsiye ederiz. ",
 
 	"user": "Kullanıcı",
 	"subscription": "Abonelik Türü",

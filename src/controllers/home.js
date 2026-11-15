@@ -212,14 +212,14 @@ function getSectionConfig(section, defaults = {}) {
 
 function getBrand() {
 	return {
-		title: configValue('opzohub:home:title', 'siteTitle', 'title') || 'opzohub',
+		title: configValue('opzohub:home:title', 'siteTitle', 'title') || 'OpzoHub',
 		logo: configValue('opzohub:home:logo', 'brand:logo', 'brand:logo:url', 'logo'),
-		logoAlt: configValue('opzohub:home:title', 'brand:logo:alt', 'siteTitle', 'title') || 'opzohub',
+		logoAlt: configValue('opzohub:home:title', 'brand:logo:alt', 'siteTitle', 'title') || 'OpzoHub',
 	};
 }
 
 function getHomeSeo(brand) {
-	const description = configValue('opzohub:home:seo:description', 'opzohub:home:description') || 'opzohub 社区首页';
+	const description = configValue('opzohub:home:seo:description', 'opzohub:home:description') || 'OpzoHub 社区首页';
 	return {
 		title: configValue('opzohub:home:seo:title') || `${brand.title} - ${description}`,
 		description: description,
@@ -235,7 +235,7 @@ function getHomeBanners() {
 		heroImage: configValue('opzohub:home:hero:image', 'opzohub:home:banner:main:image', 'opzohub:home:banner:top') || defaultHeroImage,
 		heroCtaText: configValue('opzohub:home:hero:cta:text') || '立即加入',
 		heroCtaLink: localUrl(configValue('opzohub:home:hero:cta:link', 'opzohub:home:banner:main:link', 'opzohub:home:banner:top:link') || '/register'),
-		vipTitle: configValue('opzohub:home:vip:title') || '加入opzohub VIP',
+		vipTitle: configValue('opzohub:home:vip:title') || '加入 OpzoHub VIP',
 		vipDesc: configValue('opzohub:home:vip:desc') || '解锁专属课程、会员内容与更多社区特权',
 		vipLink: localUrl(configValue('opzohub:home:vip:link') || '/register'),
 	};
@@ -470,7 +470,7 @@ exports.opzohubHome = async function (req, res, next) {
 		res.render('opzohub-home', {
 			title: seo.title,
 			bodyClasses: ['page-opzohub-home'],
-			breadcrumbs: helpers.buildBreadcrumbs([{ text: 'opzohub' }]),
+			breadcrumbs: helpers.buildBreadcrumbs([{ text: 'OpzoHub' }]),
 			brand: brand,
 			banners: banners,
 			navItems: getHomeNav(),

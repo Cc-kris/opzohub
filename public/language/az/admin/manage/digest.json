@@ -1,7 +1,7 @@
 {
 	"lead": "Aşağıda həzm çatdırılması statistikası və vaxtlarının siyahısı göstərilir.",
 	"disclaimer": "Nəzərə alın ki, e-poçt texnologiyasının təbiətinə görə e-poçt çatdırılmasına zəmanət verilmir. Bir çox dəyişənlər alıcının serverinə göndərilən e-poçtun son nəticədə istifadəçinin gələnlər qutusuna daxil olub-olmamasına, o cümlədən server reputasiyasına, qara siyahıya alınmış IP ünvanlarına və DKIM/SPF/DMARC-nin konfiqurasiya edilib-edilməməsinə təsir göstərir.",
-	"disclaimer-continued": "Uğurlu çatdırılma mesajın NodeBB tərəfindən uğurla göndərilməsi və alıcı server tərəfindən təsdiqlənməsi deməkdir. Bu, e-poçtun gələnlər qutusuna düşməsi demək deyil. Ən yaxşı nəticələr üçün biz <a href=\"https://sendgrid.com/why-sendgrid/\">SendGrid</a> kimi üçüncü tərəfin e-poçt çatdırılması xidmətindən istifadə etməyi tövsiyə edirik.",
+	"disclaimer-continued": "Uğurlu çatdırılma mesajın OpzoHub tərəfindən uğurla göndərilməsi və alıcı server tərəfindən təsdiqlənməsi deməkdir. Bu, e-poçtun gələnlər qutusuna düşməsi demək deyil. Ən yaxşı nəticələr üçün biz <a href=\"https://sendgrid.com/why-sendgrid/\">SendGrid</a> kimi üçüncü tərəfin e-poçt çatdırılması xidmətindən istifadə etməyi tövsiyə edirik.",
 
 	"user": "İstifadəçi",
 	"subscription": "Abunə növü",

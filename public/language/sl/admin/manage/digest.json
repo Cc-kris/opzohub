@@ -1,7 +1,7 @@
 {
 	"lead": "A listing of digest delivery stats and times is displayed below.",
 	"disclaimer": "Upoštevajte, da dostava elektronske pošte zaradi narave tehnologije e-pošte ni zagotovljena. Številne spremenljivke vplivajo na to, ali je e-poštno sporočilo, poslano prejemniškemu strežniku, na koncu dostavljeno v mapo »Prejeto«, vključno z ugledom strežnika, naslovi IP na črnem seznamu in ali je konfiguriran DKIM/SPF/DMARC.",
-	"disclaimer-continued": "Uspešna dostava pomeni, da je NodeBB uspešno poslal sporočilo in ga je strežnik prejemnika potrdil. To ne pomeni, da je e-poštno sporočilo prispelo v mapo »Prejeto«. Za najboljše rezultate priporočamo uporabo storitev dostave e-pošte tretjih oseb, kot je npr <a href=\"https://sendgrid.com/why-sendgrid/\">SendGrid</a>.",
+	"disclaimer-continued": "Uspešna dostava pomeni, da je OpzoHub uspešno poslal sporočilo in ga je strežnik prejemnika potrdil. To ne pomeni, da je e-poštno sporočilo prispelo v mapo »Prejeto«. Za najboljše rezultate priporočamo uporabo storitev dostave e-pošte tretjih oseb, kot je npr <a href=\"https://sendgrid.com/why-sendgrid/\">SendGrid</a>.",
 
 	"user": "Uporabnik",
 	"subscription": "Vrsta naročnine",

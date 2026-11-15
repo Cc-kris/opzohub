@@ -54,7 +54,7 @@
     "notifications.loading": "กำลังโหลดข้อแจ้งเตือน",
     "chats.loading": "กำลังโหลดหัวข้อสนทนา",
     "drafts.loading": "กำลังโหลดร่างข้อความ",
-    "motd.welcome": "ยินดีต้อนรับสู่ NodeBB แพลตฟอร์มการสนทนาแห่งอนาคต",
+    "motd.welcome": "ยินดีต้อนรับสู่ OpzoHub แพลตฟอร์มการสนทนาแห่งอนาคต",
     "alert.success": "สำเร็จ",
     "alert.error": "ผิดพลาด",
     "alert.warning": "คำเตือน",

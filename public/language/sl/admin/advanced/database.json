@@ -22,7 +22,7 @@
 	"mongo.bytes-out": "Bytes Out",
 	"mongo.num-requests": "Število zahtev",
 	"mongo.raw-info": "MongoDB Raw Info",
-	"mongo.unauthorized": "NodeBB ni mogel poizvedovati po zbirki podatkov MongoDB o ustreznih statističnih podatkih. Prepričajte se, da uporabnik, ki ga uporablja NodeBB, ima vlogo &quot;nadzornika gruče&quot; za &quot;administriranje&quot; zbirke podatkov.",
+	"mongo.unauthorized": "OpzoHub ni mogel poizvedovati po zbirki podatkov MongoDB o ustreznih statističnih podatkih. Prepričajte se, da uporabnik, ki ga uporablja OpzoHub, ima vlogo &quot;nadzornika gruče&quot; za &quot;administriranje&quot; zbirke podatkov.",
 
 	"redis": "Redis",
 	"redis.version": "Redis verzija",

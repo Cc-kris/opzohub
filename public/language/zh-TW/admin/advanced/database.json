@@ -22,7 +22,7 @@
 	"mongo.bytes-out": "位元組輸出",
 	"mongo.num-requests": "請求數量",
 	"mongo.raw-info": "MongoDB 原始資訊",
-	"mongo.unauthorized": "NodeBB 無法從 MongoDB 資料庫請求相應的統計資料。請確保 NodeBB 使用的連線帳戶具有&quot;admin&quot;資料庫的&quot;clusterMonitor&quot;角色。",
+	"mongo.unauthorized": "OpzoHub 無法從 MongoDB 資料庫請求相應的統計資料。請確保 OpzoHub 使用的連線帳戶具有&quot;admin&quot;資料庫的&quot;clusterMonitor&quot;角色。",
 
 	"redis": "Redis",
 	"redis.version": "Redis 版本",

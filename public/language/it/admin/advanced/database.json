@@ -22,7 +22,7 @@
 	"mongo.bytes-out": "Byte in uscita",
 	"mongo.num-requests": "Numero di richieste",
 	"mongo.raw-info": "Info MongoDB Raw",
-	"mongo.unauthorized": "NodeBBB non è stato in grado di interrogare il database MongoDB per le statistiche pertinenti. Assicurati che l'utente in uso da NodeBBB contenga il &quot;clusterMonitor&quot; ruolo per l' &quot;admin&quot; database.",
+	"mongo.unauthorized": "OpzoHubB non è stato in grado di interrogare il database MongoDB per le statistiche pertinenti. Assicurati che l'utente in uso da OpzoHubB contenga il &quot;clusterMonitor&quot; ruolo per l' &quot;admin&quot; database.",
 
 	"redis": "Redis",
 	"redis.version": "Versione Redis",

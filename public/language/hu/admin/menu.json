@@ -99,6 +99,6 @@
 
 	"connection-lost": "A kapcsolat megszakadt a következővel: %1, kísérlet az újracsatlakozásra...",
 
-	"alerts.version": "A <strong>NodeBB v%1</strong> verziója fut",
+	"alerts.version": "A <strong>OpzoHub v%1</strong> verziója fut",
 	"alerts.upgrade": "Frissítés v%1 verzióra"
 }

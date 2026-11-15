@@ -6,8 +6,8 @@
     "revert-theme": "Revert Theme",
     "current-theme": "Pašreizējā tēma",
     "no-themes": "Nav instalēto tēmu",
-    "revert-confirm": "Vai tiešām vēlies atjaunot noklusējamo NodeBB tēmu?",
+    "revert-confirm": "Vai tiešām vēlies atjaunot noklusējamo OpzoHub tēmu?",
     "theme-changed": "Tēma ir mainīta",
-    "revert-success": "NodeBB veiksmīgi atgriezts atpakaļ uz tā noklusējuma tēmu.",
-    "restart-to-activate": "Lūdzu, pārkompilēt un pārstartēt NodeBB, lai pilnībā aktivizētu tēmu."
+    "revert-success": "OpzoHub veiksmīgi atgriezts atpakaļ uz tā noklusējuma tēmu.",
+    "restart-to-activate": "Lūdzu, pārkompilēt un pārstartēt OpzoHub, lai pilnībā aktivizētu tēmu."
 }

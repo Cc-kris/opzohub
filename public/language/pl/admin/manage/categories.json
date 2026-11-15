@@ -91,7 +91,7 @@
 	"federation.disabled-cta": "Ustawienia federacji &rarr;",
 	"federation.syncing-header": "Synchronizacja",
 	"federation.syncing-intro": "Kategoria może śledzić \"Aktora grupy\" za pośrednictwem protokołu ActivityPub. O ile zawartość zostanie odebrana przez jednego z aktorów poniżej to z automatu pojawi się w tej kategorii.",
-	"federation.syncing-caveat": "To ustawienia zapewnia jednostronną synchronizację. NodeBB użyje aktora subskrybcji/śledzenia ale w drugą stronę może być różnie.",
+	"federation.syncing-caveat": "To ustawienia zapewnia jednostronną synchronizację. OpzoHub użyje aktora subskrybcji/śledzenia ale w drugą stronę może być różnie.",
 	"federation.syncing-none": "Ta kategoria nie jest wykorzystywana do śledzenia.",
 	"federation.syncing-add": "Synchronizuj z...",
 	"federation.syncing-actorUri": "Aktor",

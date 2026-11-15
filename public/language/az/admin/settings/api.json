@@ -1,13 +1,13 @@
 {
 	"tokens": "Tokenlər",
 	"settings": "Parametrlər",
-	"lead-text": "Bu səhifədən NodeBB-də Write API-yə girişi konfiqurasiya edə bilərsiniz.",
-	"intro": "Varsayılan olaraq, Write API istifadəçiləri seans kukisi əsasında autentifikasiya edir, lakin NodeBB bu səhifə vasitəsilə yaradılan tokenlər vasitəsilə Taşıyıcının autentifikasiyasını da dəstəkləyir.",
+	"lead-text": "Bu səhifədən OpzoHub-də Write API-yə girişi konfiqurasiya edə bilərsiniz.",
+	"intro": "Varsayılan olaraq, Write API istifadəçiləri seans kukisi əsasında autentifikasiya edir, lakin OpzoHub bu səhifə vasitəsilə yaradılan tokenlər vasitəsilə Taşıyıcının autentifikasiyasını da dəstəkləyir.",
 	"warning": "<strong>Diqqətli olun</strong> - tokenlərə şifrə kimi yanaşın. Əgər onlar sızdırılıbsa, hesabınız təhlükə altına düşmüş hesab olunmalıdır.",
 	"docs": "Tam API spesifikasiyasına daxil olmaq üçün buraya klikləyin",
 
 	"require-https": "API istifadəsini yalnız HTTPS vasitəsilə tələb edin",
-	"require-https-caveat": "<strong>Qeyd</strong>: Yük balanslaşdırıcılarını əhatə edən bəzi qurğular HTTP istifadə edərək öz sorğularını NodeBB-yə proksiləşdirə bilər, bu halda bu seçim qeyri-aktiv olaraq qalmalıdır.",
+	"require-https-caveat": "<strong>Qeyd</strong>: Yük balanslaşdırıcılarını əhatə edən bəzi qurğular HTTP istifadə edərək öz sorğularını OpzoHub-yə proksiləşdirə bilər, bu halda bu seçim qeyri-aktiv olaraq qalmalıdır.",
 
 	"uid": "İstifadəçi ID-si",
 	"token": "Token",

@@ -47,7 +47,7 @@
     "notif.cta-new-chat": "مشاهده چت",
     "notif.test.short": "Testing Notifications",
     "notif.test.long": "This is a test of the notifications email. Send help!",
-    "test.text1": "این یک ایمیل امتحانی جهت تایید اینکه فرستنده ایمیل برای انجمن NodeBB شما به درستی تنظیم و نصب شده است",
+    "test.text1": "این یک ایمیل امتحانی جهت تایید اینکه فرستنده ایمیل برای انجمن OpzoHub شما به درستی تنظیم و نصب شده است",
     "unsub.cta": "برای ویرایش آن تنظیمات اینجا کلیک کنید",
     "unsubscribe": "unsubscribe",
     "unsub.success": "You will no longer receive emails from the <strong>%1</strong> mailing list",

@@ -1,13 +1,13 @@
 {
-	"alert.confirm-rebuild-and-restart": "Bạn có chắc muốn dựng lại và khởi động lại NodeBB?",
-	"alert.confirm-restart": "Bạn có chắc muốn khởi động lại NodeBB",
+	"alert.confirm-rebuild-and-restart": "Bạn có chắc muốn dựng lại và khởi động lại OpzoHub?",
+	"alert.confirm-restart": "Bạn có chắc muốn khởi động lại OpzoHub",
 
-	"acp-title": "%1 | Bảng Điểu Khiển Quản Trị NodeBB",
+	"acp-title": "%1 | Bảng Điểu Khiển Quản Trị OpzoHub",
 	"settings-header-contents": "Nội dung",
 	"changes-saved": "Đã Lưu Thay Đổi",
-	"changes-saved-message": "Những thay đổi của bạn đối với cấu hình NodeBB đã được lưu.",
+	"changes-saved-message": "Những thay đổi của bạn đối với cấu hình OpzoHub đã được lưu.",
 	"changes-not-saved": "Thay Đổi Chưa Được Lưu",
-	"changes-not-saved-message": "NodeBB đã gặp sự cố khi lưu các thay đổi của bạn. (%1)",
+	"changes-not-saved-message": "OpzoHub đã gặp sự cố khi lưu các thay đổi của bạn. (%1)",
 	"save-changes": "Lưu thay đổi",
 	"min": "Tối thiểu:",
 	"max": "Tối đa:",

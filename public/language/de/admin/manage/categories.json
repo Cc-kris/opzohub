@@ -91,7 +91,7 @@
 	"federation.disabled-cta": "Föderationseinstellungen &rarr;",
 	"federation.syncing-header": "Synchronisation",
 	"federation.syncing-intro": "Eine Kategorie kann über das ActivityPub-Protokoll einem „Gruppenakteur“ folgen. Wenn Inhalte von einem der unten aufgeführten Akteure empfangen werden, werden sie automatisch dieser Kategorie hinzugefügt.",
-	"federation.syncing-caveat": "Hinweis: Durch die Einrichtung der Synchronisierung wird hier eine Einweg-Synchronisierung hergestellt. NodeBB versucht, den Akteur zu abonnieren/zu folgen, aber das Gegenteil kann nicht angenommen werden.",
+	"federation.syncing-caveat": "Hinweis: Durch die Einrichtung der Synchronisierung wird hier eine Einweg-Synchronisierung hergestellt. OpzoHub versucht, den Akteur zu abonnieren/zu folgen, aber das Gegenteil kann nicht angenommen werden.",
 	"federation.syncing-none": "Diese Kategorie folgt derzeit niemandem.",
 	"federation.syncing-add": "Synchronisieren mit...",
 	"federation.syncing-actorUri": "Akteur",

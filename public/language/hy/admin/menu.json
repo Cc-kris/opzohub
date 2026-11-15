@@ -99,6 +99,6 @@
 
 	"connection-lost": "%1-ի միացումը կորել է, փորձում է նորից միանալ...",
 
-	"alerts.version": "Գործող NodeBB v%1",
+	"alerts.version": "Գործող OpzoHub v%1",
 	"alerts.upgrade": "Թարմացրեք մինչև v%1"
 }

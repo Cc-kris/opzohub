@@ -91,7 +91,7 @@
 	"federation.disabled-cta": "Føderasjonsinnstillingar &rarr;",
 	"federation.syncing-header": "Synkronisering",
 	"federation.syncing-intro": "Ein kategori kan følge ein “Gruppeaktør” via ActivityPub-protokollen. Dersom innhald blir mottatt frå ein av aktørane som er lista opp nedanfor, vil det automatisk bli lagt til i denne kategorien.",
-	"federation.syncing-caveat": " Merk: Å konfigurere synkronisering her opprettar ein einvegs synkronisering. NodeBB prøver å abonnere på/følge aktøren, men det motsette kan ikkje føresetjast.",
+	"federation.syncing-caveat": " Merk: Å konfigurere synkronisering her opprettar ein einvegs synkronisering. OpzoHub prøver å abonnere på/følge aktøren, men det motsette kan ikkje føresetjast.",
 	"federation.syncing-none": "Denne kategorien følger for tida ingen.",
 	"federation.syncing-add": "Synkronser med...",
 	"federation.syncing-actorUri": "Aktør",

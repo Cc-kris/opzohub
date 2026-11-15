@@ -6,8 +6,8 @@
     "revert-theme": "Revert Theme",
     "current-theme": "Trenutna tema",
     "no-themes": "Nisu pronađene instalirane teme",
-    "revert-confirm": "Sigurni ste da želite povratiti zadani NodeBB izgled ?",
+    "revert-confirm": "Sigurni ste da želite povratiti zadani OpzoHub izgled ?",
     "theme-changed": "Tema promijenjena",
-    "revert-success": "Uspješno ste vratili vaš NodeBB u početno zadanu temu.",
-    "restart-to-activate": "Please rebuild and restart your NodeBB to fully activate this theme."
+    "revert-success": "Uspješno ste vratili vaš OpzoHub u početno zadanu temu.",
+    "restart-to-activate": "Please rebuild and restart your OpzoHub to fully activate this theme."
 }

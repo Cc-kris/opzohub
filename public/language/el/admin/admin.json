@@ -1,13 +1,13 @@
 {
-	"alert.confirm-rebuild-and-restart": "Είστε βέβαιοι ότι θέλετε να αναδημιουργήσετε και να επανεκκινήσετε το NodeBB;",
-	"alert.confirm-restart": "Είστε βέβαιοι ότι θέλετε να επανεκκινήσετε το NodeBB;",
+	"alert.confirm-rebuild-and-restart": "Είστε βέβαιοι ότι θέλετε να αναδημιουργήσετε και να επανεκκινήσετε το OpzoHub;",
+	"alert.confirm-restart": "Είστε βέβαιοι ότι θέλετε να επανεκκινήσετε το OpzoHub;",
 
-	"acp-title": "%1 | NodeBB Πίνακας Ελέγχου",
+	"acp-title": "%1 | OpzoHub Πίνακας Ελέγχου",
 	"settings-header-contents": "Περιεχόμενα",
 	"changes-saved": "Changes Saved",
-	"changes-saved-message": "Your changes to the NodeBB configuration have been saved.",
+	"changes-saved-message": "Your changes to the OpzoHub configuration have been saved.",
 	"changes-not-saved": "Changes Not Saved",
-	"changes-not-saved-message": "NodeBB encountered a problem saving your changes. (%1)",
+	"changes-not-saved-message": "OpzoHub encountered a problem saving your changes. (%1)",
 	"save-changes": "Save changes",
 	"min": "Min:",
 	"max": "Max:",

@@ -159,8 +159,8 @@
 				<div class="side-head"><h2>今日热门标签</h2><a href="{config.relative_path}/categories">换一换</a></div>
 				<div class="tag-cloud">
 					{{{if hasHomeCategories}}}
-				{{{each categories}}}
-					<a href="{categories.url}">{categories.name} <b>{categories.topicCount}</b></a>
+				{{{each homeCategories}}}
+					<a href="{homeCategories.url}">{homeCategories.name} <b>{homeCategories.topicCount}</b></a>
 					{{{end}}}
 				{{{else}}}<div class="opzohub-empty mini">暂无热门标签，请先创建分类</div>{{{end}}}
 				</div>

@@ -22,7 +22,7 @@
 	"mongo.bytes-out": "Bytes enviados",
 	"mongo.num-requests": "Quantidade de Requisições",
 	"mongo.raw-info": "Informações Não-Processadas do MongoDB",
-	"mongo.unauthorized": "O NodeBB não conseguiu consultar o banco de dados MongoDB para gerar estatísticas relevantes. Por favor, certifique-se de que o usuário em uso pelo NodeBB tem a função de &quot;clusterMonitor&quot; para o banco de dados &quot;admin&quot;.",
+	"mongo.unauthorized": "O OpzoHub não conseguiu consultar o banco de dados MongoDB para gerar estatísticas relevantes. Por favor, certifique-se de que o usuário em uso pelo OpzoHub tem a função de &quot;clusterMonitor&quot; para o banco de dados &quot;admin&quot;.",
 
 	"redis": "Redis",
 	"redis.version": "Versão do Redis",

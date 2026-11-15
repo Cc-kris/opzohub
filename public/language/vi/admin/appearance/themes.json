@@ -6,8 +6,8 @@
     "revert-theme": "Hoàn Nguyên Chủ Đề",
     "current-theme": "Giao Diện Hiện Tại",
     "no-themes": "Không tìm thấy giao diện đã cài đặt",
-    "revert-confirm": "Bạn có chắc muốn khôi phục giao diện NodeBB mặc định không?",
+    "revert-confirm": "Bạn có chắc muốn khôi phục giao diện OpzoHub mặc định không?",
     "theme-changed": "Đã Đổi Giao Diện",
-    "revert-success": "Bạn đã thành công trả lại NodeBB của mình trở về giao diện mặc định.",
-    "restart-to-activate": "Hãy dựng lại và chạy lại NodeBB để kích hoạt toàn bộ giao diện này."
+    "revert-success": "Bạn đã thành công trả lại OpzoHub của mình trở về giao diện mặc định.",
+    "restart-to-activate": "Hãy dựng lại và chạy lại OpzoHub để kích hoạt toàn bộ giao diện này."
 }

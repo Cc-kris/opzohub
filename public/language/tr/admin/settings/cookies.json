@@ -5,7 +5,7 @@
 	"consent.acceptance": "Onay mesajı",
 	"consent.link-text": "Politika Bağlantısı Metni",
 	"consent.link-url": "Politika Sayfanızın URL adresi",
-	"consent.blank-localised-default": "NodeBB yerelleştirilmiş varsayılanlarını kullanmak için boş bırakın",
+	"consent.blank-localised-default": "OpzoHub yerelleştirilmiş varsayılanlarını kullanmak için boş bırakın",
 	"settings": "Ayarlar",
 	"cookie-domain": "Oturum çerezi alanı",
 	"max-user-sessions": "Kullanıcı başı maksimum aktif oturum ",

@@ -52,7 +52,7 @@
 	"email-confirm-failed": "We could not confirm your email, please try again later.",
 	"confirm-email-already-sent": "Confirmation email already sent, please wait %1 minute(s) to send another one.",
 	"confirm-email-expired": "Confirmation email expired",
-	"sendmail-not-found": "The sendmail executable could not be found, please ensure it is installed and executable by the user running NodeBB.",
+	"sendmail-not-found": "The sendmail executable could not be found, please ensure it is installed and executable by the user running OpzoHub.",
 	"digest-not-enabled": "This user does not have digests enabled, or the system default is not configured to send digests",
 
 	"username-too-short": "Username too short",
@@ -226,7 +226,7 @@
 	"custom-user-field-invalid-link": "Custom field link is invalid, %1",
 	"custom-user-field-invalid-number": "Custom field number is invalid, %1",
 	"custom-user-field-invalid-date": "Custom field date is invalid, %1",
-	"invalid-custom-user-field": "Invalid custom user field, \"%1\" is already used by NodeBB",
+	"invalid-custom-user-field": "Invalid custom user field, \"%1\" is already used by OpzoHub",
 	"post-already-flagged": "You have already flagged this post",
 	"user-already-flagged": "You have already flagged this user",
 	"post-flagged-too-many-times": "This post has been flagged by others already",
@@ -241,14 +241,14 @@
 	"too-many-downvotes-today": "You can only downvote %1 times a day",
 	"too-many-downvotes-today-user": "You can only downvote a user %1 times a day",
 
-	"reload-failed": "NodeBB encountered a problem while reloading: \"%1\". NodeBB will continue to serve the existing client-side assets, although you should undo what you did just prior to reloading.",
+	"reload-failed": "OpzoHub encountered a problem while reloading: \"%1\". OpzoHub will continue to serve the existing client-side assets, although you should undo what you did just prior to reloading.",
 
 	"registration-error": "Registration Error",
 	"parse-error": "Something went wrong while parsing server response",
 	"wrong-login-type-email": "Please use your email to login",
 	"wrong-login-type-username": "Please use your username to login",
 	"sso-registration-disabled": "Registration has been disabled for %1 accounts, please register with an email address first",
-	"sso-multiple-association": "You cannot associate multiple accounts from this service to your NodeBB account. Please dissociate your existing account and try again.",
+	"sso-multiple-association": "You cannot associate multiple accounts from this service to your OpzoHub account. Please dissociate your existing account and try again.",
 
 	"invite-maximum-met": "You have invited the maximum amount of people (%1 out of %2).",
 
@@ -280,7 +280,7 @@
 	"socket-reconnect-failed": "Unable to reach the server at this time. Click here to try again, or try again later",
 
 	"invalid-plugin-id": "Invalid plugin ID",
-	"plugin-not-whitelisted": "Unable to install plugin &ndash; only plugins whitelisted by the NodeBB Package Manager can be installed via the ACP",
+	"plugin-not-whitelisted": "Unable to install plugin &ndash; only plugins whitelisted by the OpzoHub Package Manager can be installed via the ACP",
 	"cannot-toggle-system-plugin": "You cannot toggle the state of a system plugin",
 	"plugin-installation-via-acp-disabled": "Plugin installation via ACP is disabled",
 	"plugins-set-in-configuration": "You are not allowed to change plugin state as they are defined at runtime (config.json, environmental variables or terminal arguments), please modify the configuration instead.",

@@ -22,7 +22,7 @@
 	"mongo.bytes-out": "Xaric olan Baytlar",
 	"mongo.num-requests": "Sorğuların sayı",
 	"mongo.raw-info": "MongoDB raw məlumatı",
-	"mongo.unauthorized": "NodeBB müvafiq statistika üçün MongoDB verilənlər bazasını sorğulaya bilmədi. NodeBB tərəfindən istifadə edilən istifadəçinin &quot;clusterMonitor&quot; &quot;admin&quot; üçün rol; verilənlər bazası.",
+	"mongo.unauthorized": "OpzoHub müvafiq statistika üçün MongoDB verilənlər bazasını sorğulaya bilmədi. OpzoHub tərəfindən istifadə edilən istifadəçinin &quot;clusterMonitor&quot; &quot;admin&quot; üçün rol; verilənlər bazası.",
 
 	"redis": "Redis",
 	"redis.version": "Redis versiyası",

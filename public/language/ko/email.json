@@ -47,7 +47,7 @@
     "notif.cta-new-chat": "채팅 보기",
     "notif.test.short": "알림 테스트 중",
     "notif.test.long": "알림 이메일을 테스트합니다. 도와주세요!",
-    "test.text1": "NodeBB의 이메일러가 올바르게 설정되었는지 확인하기 위한 테스트 이메일입니다.",
+    "test.text1": "OpzoHub의 이메일러가 올바르게 설정되었는지 확인하기 위한 테스트 이메일입니다.",
     "unsub.cta": "이 설정을 변경하려면 클릭하세요",
     "unsubscribe": "구독 취소",
     "unsub.success": "<strong>%1</strong> 메일링 리스트에서 더 이상 이메일을 받지 않습니다",

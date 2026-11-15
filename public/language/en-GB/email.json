@@ -59,7 +59,7 @@
 	"notif.test.short": "Testing Notifications",
 	"notif.test.long": "This is a test of the notifications email. Send help!",
 
-	"test.text1": "This is a test email to verify that the emailer is set up correctly for your NodeBB.",
+	"test.text1": "This is a test email to verify that the emailer is set up correctly for your OpzoHub.",
 
 	"unsub.cta": "Click here to alter those settings",
 	"unsubscribe": "unsubscribe",

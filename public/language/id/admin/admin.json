@@ -1,13 +1,13 @@
 {
-	"alert.confirm-rebuild-and-restart": "Anda yakin ingin membangun ulang dan mulai ulang NodeBB?",
-	"alert.confirm-restart": "Anda yakin ingin mulai ulang NodeBB?",
+	"alert.confirm-rebuild-and-restart": "Anda yakin ingin membangun ulang dan mulai ulang OpzoHub?",
+	"alert.confirm-restart": "Anda yakin ingin mulai ulang OpzoHub?",
 
-	"acp-title": "%1 | Kontrol Panel Admin NodeBB",
+	"acp-title": "%1 | Kontrol Panel Admin OpzoHub",
 	"settings-header-contents": "Konten",
 	"changes-saved": "Changes Saved",
-	"changes-saved-message": "Your changes to the NodeBB configuration have been saved.",
+	"changes-saved-message": "Your changes to the OpzoHub configuration have been saved.",
 	"changes-not-saved": "Perubahan Tidak Disimpan",
-	"changes-not-saved-message": "NodeBB mengalami masalah saat menyimpan perubahan Anda. (%1)",
+	"changes-not-saved-message": "OpzoHub mengalami masalah saat menyimpan perubahan Anda. (%1)",
 	"save-changes": "Save changes",
 	"min": "Min:",
 	"max": "Max:",

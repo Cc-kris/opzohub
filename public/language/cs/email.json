@@ -47,7 +47,7 @@
     "notif.cta-new-chat": "Zobrazit konverzaci",
     "notif.test.short": "Testování oznámení",
     "notif.test.long": "Toto je test e-mailového oznámení. Pošlete pro případnou pomoc!",
-    "test.text1": "Tento testovací e-mail slouží k ověření, že je e-mailer správně nastaven pro práci s NodeBB.",
+    "test.text1": "Tento testovací e-mail slouží k ověření, že je e-mailer správně nastaven pro práci s OpzoHub.",
     "unsub.cta": "Chcete-li změnit tyto nastavení, klikněte zde.",
     "unsubscribe": "odhlásit",
     "unsub.success": "Již nebudete nadále dostávat e-maily z <strong>%1</strong>",

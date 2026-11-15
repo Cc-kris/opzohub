@@ -22,7 +22,7 @@
 	"mongo.bytes-out": "Байт исходящих",
 	"mongo.num-requests": "Количество запросов",
 	"mongo.raw-info": "Сырые данные о MongoDB",
-	"mongo.unauthorized": "NodeBB не смог получить статистические данные от MongoDB. Пожалуйста, проверьте, что пользователь, от имени которого NodeBB соединяется с БД имеет привилегию «clusterMonitor» в БД «admin». ",
+	"mongo.unauthorized": "OpzoHub не смог получить статистические данные от MongoDB. Пожалуйста, проверьте, что пользователь, от имени которого OpzoHub соединяется с БД имеет привилегию «clusterMonitor» в БД «admin». ",
 
 	"redis": "Redis",
 	"redis.version": "Версия Redis",

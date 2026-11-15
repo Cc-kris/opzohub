@@ -99,6 +99,6 @@
 
 	"connection-lost": "%1 سے رابطہ منقطع ہو گیا۔ ہم آپ کو دوبارہ جوڑنے کی کوشش کر رہے ہیں…",
 
-	"alerts.version": "<strong>NodeBB ورژن %1</strong> استعمال ہو رہا ہے",
+	"alerts.version": "<strong>OpzoHub ورژن %1</strong> استعمال ہو رہا ہے",
 	"alerts.upgrade": "v%1 پر اپ گریڈ کریں"
 }

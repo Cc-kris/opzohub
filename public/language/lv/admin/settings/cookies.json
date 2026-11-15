@@ -5,7 +5,7 @@
 	"consent.acceptance": "Pieņemšanas paziņojums",
 	"consent.link-text": "Polises saites teksts",
 	"consent.link-url": "Policy Link URL",
-	"consent.blank-localised-default": "Atstāt tukšu, lai izmantotu noklusējuma NodeBB lokalizāciju",
+	"consent.blank-localised-default": "Atstāt tukšu, lai izmantotu noklusējuma OpzoHub lokalizāciju",
 	"settings": "Iestatījumi",
 	"cookie-domain": "Sesiju sīkfailu domēns",
 	"max-user-sessions": "Max active sessions per user",

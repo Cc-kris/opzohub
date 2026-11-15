@@ -91,7 +91,7 @@
 	"federation.disabled-cta": "Federasiya parametrləri &rarr;",
 	"federation.syncing-header": "Sinxronizasiya",
 	"federation.syncing-intro": "Kateqoriya ActivityPub protokolu vasitəsilə \"Qrup Aktyoru\"nu izləyə bilər. Məzmun aşağıda sadalanan aktyorlardan birindən alınarsa, o, avtomatik olaraq bu kateqoriyaya əlavə olunacaq.",
-	"federation.syncing-caveat": "N.B. Sinxronizasiyanın burada qurulması birtərəfli sinxronizasiya yaradır. NodeBB aktyora abunə olmağa/izləməyə çalışır, lakin bunun əksini güman etmək olmaz.",
+	"federation.syncing-caveat": "N.B. Sinxronizasiyanın burada qurulması birtərəfli sinxronizasiya yaradır. OpzoHub aktyora abunə olmağa/izləməyə çalışır, lakin bunun əksini güman etmək olmaz.",
 	"federation.syncing-none": "Bu kateqoriyanı hal-hazırda heç kimi izləmir.",
 	"federation.syncing-add": "Sinxronizasiya et...",
 	"federation.syncing-actorUri": "Aktyor",

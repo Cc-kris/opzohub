@@ -99,6 +99,6 @@
 
 	"connection-lost": "La connexion à %1 a été perdue, tentative de reconnexion…",
 
-	"alerts.version": "<strong>NodeBB v%1</strong>",
+	"alerts.version": "<strong>OpzoHub v%1</strong>",
 	"alerts.upgrade": "Mettre à jour en v%1"
 }

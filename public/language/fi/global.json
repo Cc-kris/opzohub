@@ -54,7 +54,7 @@
     "notifications.loading": "Ladataan ilmoituksia",
     "chats.loading": "Ladataan keskusteluja",
     "drafts.loading": "Loading Drafts",
-    "motd.welcome": "Tervetuloa NodeBB:hen, tulevaisuuden keskustelualustalle.",
+    "motd.welcome": "Tervetuloa OpzoHub:hen, tulevaisuuden keskustelualustalle.",
     "alert.success": "Onnistui",
     "alert.error": "Virhe",
     "alert.warning": "Warning",

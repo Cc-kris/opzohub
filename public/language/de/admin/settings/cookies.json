@@ -5,7 +5,7 @@
 	"consent.acceptance": "Annahmenachricht",
 	"consent.link-text": "Richtlinien-Link-Text",
 	"consent.link-url": "Richtlinienlink-URL",
-	"consent.blank-localised-default": "Feld leerlassen, um die lokalisierten NodeBB-Standardeinstellungen zu verwenden",
+	"consent.blank-localised-default": "Feld leerlassen, um die lokalisierten OpzoHub-Standardeinstellungen zu verwenden",
 	"settings": "Einstellungen",
 	"cookie-domain": "Session-Cookie-Domain",
 	"max-user-sessions": "Maximale aktive Sitzungen pro Benutzer",

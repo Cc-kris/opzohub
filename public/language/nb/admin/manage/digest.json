@@ -1,7 +1,7 @@
 {
 	"lead": "En oversikt over statistikk og tidspunkt for utsending av sammendrag vises nedenfor.",
 	"disclaimer": "Vær oppmerksom på at e-postlevering ikke er garantert, på grunn av teknologien bak e-post. Mange variabler påvirker om en e-post som sendes til mottakerens server faktisk havner i brukerens innboks, inkludert serverens omdømme, svartelistede IP-adresser og om DKIM/SPF/DMARC er konfigurert.",
-	"disclaimer-continued": "En vellykket levering betyr at meldingen ble sendt suksessfullt av NodeBB og bekreftet av mottakerens server. Det betyr ikke at e-posten havnet i innboksen. For best resultat anbefaler vi å bruke en tredjeparts e-postleveringstjeneste som <a href=\"https://sendgrid.com/why-sendgrid/\">SendGrid</a>.",
+	"disclaimer-continued": "En vellykket levering betyr at meldingen ble sendt suksessfullt av OpzoHub og bekreftet av mottakerens server. Det betyr ikke at e-posten havnet i innboksen. For best resultat anbefaler vi å bruke en tredjeparts e-postleveringstjeneste som <a href=\"https://sendgrid.com/why-sendgrid/\">SendGrid</a>.",
 
 	"user": "Bruker",
 	"subscription": "Abonnementstype",

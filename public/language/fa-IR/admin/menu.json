@@ -99,6 +99,6 @@
 
 	"connection-lost": "به نظر می‌رسد اتصال شما به %1 از دست رفته. لطفا صبر کنید ما سعی می‌کنیم که دوباره شما را متصل کنیم.",
 
-	"alerts.version": "Running <strong>NodeBB v%1</strong>",
+	"alerts.version": "Running <strong>OpzoHub v%1</strong>",
 	"alerts.upgrade": "Upgrade to v%1"
 }

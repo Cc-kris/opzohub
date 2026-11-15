@@ -1,13 +1,13 @@
 {
-	"alert.confirm-rebuild-and-restart": "Är du säker på att du vill ombygga och starta om NodeBB?",
-	"alert.confirm-restart": "Är du säker på att du vill starta om NodeBB?",
+	"alert.confirm-rebuild-and-restart": "Är du säker på att du vill ombygga och starta om OpzoHub?",
+	"alert.confirm-restart": "Är du säker på att du vill starta om OpzoHub?",
 
-	"acp-title": "%1 | NodeBB Admin Kontrollpanel",
+	"acp-title": "%1 | OpzoHub Admin Kontrollpanel",
 	"settings-header-contents": "Innehåll",
 	"changes-saved": "Changes Saved",
-	"changes-saved-message": "Your changes to the NodeBB configuration have been saved.",
+	"changes-saved-message": "Your changes to the OpzoHub configuration have been saved.",
 	"changes-not-saved": "Ändringar Sparades Ej",
-	"changes-not-saved-message": "NodeBB kunde inte spara dina ändringar. (%1)",
+	"changes-not-saved-message": "OpzoHub kunde inte spara dina ändringar. (%1)",
 	"save-changes": "Save changes",
 	"min": "Min:",
 	"max": "Max:",

@@ -1,13 +1,13 @@
 {
-	"alert.confirm-rebuild-and-restart": "Vai tiešām vēlies pārkompilēt un pārstartēt NodeBB?",
-	"alert.confirm-restart": "Vai tiešām vēlies pārstartēt NodeBB?",
+	"alert.confirm-rebuild-and-restart": "Vai tiešām vēlies pārkompilēt un pārstartēt OpzoHub?",
+	"alert.confirm-restart": "Vai tiešām vēlies pārstartēt OpzoHub?",
 
-	"acp-title": "%1 | NodeBB administrācijas vadības panelis",
+	"acp-title": "%1 | OpzoHub administrācijas vadības panelis",
 	"settings-header-contents": "Saturs",
 	"changes-saved": "Changes Saved",
-	"changes-saved-message": "Your changes to the NodeBB configuration have been saved.",
+	"changes-saved-message": "Your changes to the OpzoHub configuration have been saved.",
 	"changes-not-saved": "Changes Not Saved",
-	"changes-not-saved-message": "NodeBB encountered a problem saving your changes. (%1)",
+	"changes-not-saved-message": "OpzoHub encountered a problem saving your changes. (%1)",
 	"save-changes": "Save changes",
 	"min": "Min:",
 	"max": "Max:",

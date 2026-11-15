@@ -5,7 +5,7 @@
 	"consent.acceptance": "Текст сообщения о согласии",
 	"consent.link-text": "Текст ссылки на правила",
 	"consent.link-url": "URL ссылки на правила",
-	"consent.blank-localised-default": "Оставьте пустым, чтобы использовать стандартные настройки NodeBB",
+	"consent.blank-localised-default": "Оставьте пустым, чтобы использовать стандартные настройки OpzoHub",
 	"settings": "Настройки",
 	"cookie-domain": "Домен для cookie сессии",
 	"max-user-sessions": "Максимальное количество сессий на пользователя",

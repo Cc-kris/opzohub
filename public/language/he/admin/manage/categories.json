@@ -91,7 +91,7 @@
 	"federation.disabled-cta": "הגדרות הפדרציה &rarr;",
 	"federation.syncing-header": "סנכרון",
 	"federation.syncing-intro": "קטגוריה יכולה לעקוב אחר \"שחקן קבוצתי\" באמצעות פרוטוקול ActivityPub. אם יתקבל תוכן מאחד השחקנים המפורטים למטה, הוא יתווסף אוטומטית לקטגוריה זו.",
-	"federation.syncing-caveat": "הגדרת סנכרון N.B. כאן יוצרת סנכרון חד כיווני. NodeBB מנסה להירשם/לעקוב אחרי השחקן, אך לא ניתן להניח את ההיפך.",
+	"federation.syncing-caveat": "הגדרת סנכרון N.B. כאן יוצרת סנכרון חד כיווני. OpzoHub מנסה להירשם/לעקוב אחרי השחקן, אך לא ניתן להניח את ההיפך.",
 	"federation.syncing-none": "קטגוריה זו אינה עוקבת כעת אחר אף אחד.",
 	"federation.syncing-add": "סינכרון עם...",
 	"federation.syncing-actorUri": "שחקן",

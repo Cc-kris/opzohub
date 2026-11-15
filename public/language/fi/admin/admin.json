@@ -1,13 +1,13 @@
 {
-	"alert.confirm-rebuild-and-restart": "Haluatko varmasti uudelleenrakentaa ja uudelleenkäynnistää NodeBB:n?",
-	"alert.confirm-restart": "Haluatko varmasti uudelleenkäynnistää NodeBB:n?",
+	"alert.confirm-rebuild-and-restart": "Haluatko varmasti uudelleenrakentaa ja uudelleenkäynnistää OpzoHub:n?",
+	"alert.confirm-restart": "Haluatko varmasti uudelleenkäynnistää OpzoHub:n?",
 
-	"acp-title": "%1 | NodeBB admin hallintapaneeli",
+	"acp-title": "%1 | OpzoHub admin hallintapaneeli",
 	"settings-header-contents": "Sisältö",
 	"changes-saved": "Muutokset tallennettiin",
-	"changes-saved-message": "Muutoksesi NodeBB-asetuksiin tallennettiin.",
+	"changes-saved-message": "Muutoksesi OpzoHub-asetuksiin tallennettiin.",
 	"changes-not-saved": "Muutoksia ei tallennettu",
-	"changes-not-saved-message": "NodeBB encountered a problem saving your changes. (%1)",
+	"changes-not-saved-message": "OpzoHub encountered a problem saving your changes. (%1)",
 	"save-changes": "Tallenna muutokset",
 	"min": "Min:",
 	"max": "Max:",

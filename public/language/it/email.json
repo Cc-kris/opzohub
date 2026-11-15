@@ -47,7 +47,7 @@
     "notif.cta-new-chat": "Visualizza Chat",
     "notif.test.short": "Notifiche di test",
     "notif.test.long": "Questo è un test delle notifiche email. Invia aiuto!",
-    "test.text1": "Questa è una email di prova per verificare che il servizio di invio email è configurato correttamente sul tuo NodeBB.",
+    "test.text1": "Questa è una email di prova per verificare che il servizio di invio email è configurato correttamente sul tuo OpzoHub.",
     "unsub.cta": "Clicca qui per modificare queste impostazioni",
     "unsubscribe": "Annulla l'iscrizione",
     "unsub.success": "Non riceverai più email dalla <strong>%1</strong> mailing list",

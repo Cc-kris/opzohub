@@ -6,8 +6,8 @@
     "revert-theme": "Revert Theme",
     "current-theme": "Aktuálny motív",
     "no-themes": "Žiadne nainštalované motívy neboli nájdené",
-    "revert-confirm": "Ste si istý/a, že chcete obnoviť predvolený NodeBB motív?",
+    "revert-confirm": "Ste si istý/a, že chcete obnoviť predvolený OpzoHub motív?",
     "theme-changed": "Motív bol zmenený",
-    "revert-success": "Úspešne sa Vám podarilo obnoviť Váš NodeBB do predvoleného motívu.",
-    "restart-to-activate": "Pre úplné aktivovanie tejto témy, znovu zostavte a reštartujte NodeBB."
+    "revert-success": "Úspešne sa Vám podarilo obnoviť Váš OpzoHub do predvoleného motívu.",
+    "restart-to-activate": "Pre úplné aktivovanie tejto témy, znovu zostavte a reštartujte OpzoHub."
 }

@@ -99,6 +99,6 @@
 
 	"connection-lost": "Соединение с %1 потеряно, пытаюсь переподключиться...",
 
-	"alerts.version": "Вы используете <strong>NodeBB версии <span id=\"version\">%1</span></strong>",
+	"alerts.version": "Вы используете <strong>OpzoHub версии <span id=\"version\">%1</span></strong>",
 	"alerts.upgrade": "Обновить до v%1"
 }

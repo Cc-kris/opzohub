@@ -54,7 +54,7 @@
     "notifications.loading": "Laddar notiser",
     "chats.loading": "Laddar chattar",
     "drafts.loading": "Laddar utkast",
-    "motd.welcome": "Välkommen till NodeBB, framtidens diskussionsplattform.",
+    "motd.welcome": "Välkommen till OpzoHub, framtidens diskussionsplattform.",
     "alert.success": "Lyckat",
     "alert.error": "Fel",
     "alert.warning": "Warning",

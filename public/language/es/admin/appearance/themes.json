@@ -6,8 +6,8 @@
     "revert-theme": "Revert Theme",
     "current-theme": "Tema Actual ",
     "no-themes": "No se encontraron temas instalados",
-    "revert-confirm": "¿Estas seguro/a que quieres restaurar el tema de fabrica de NodeBB?",
+    "revert-confirm": "¿Estas seguro/a que quieres restaurar el tema de fabrica de OpzoHub?",
     "theme-changed": "Se Cambió el Tema",
-    "revert-success": "Has revertido con exito el tema de fabrica de NodeBB.",
-    "restart-to-activate": "Por favor recompila y reinicia NodeBB para activar por completo este tema."
+    "revert-success": "Has revertido con exito el tema de fabrica de OpzoHub.",
+    "restart-to-activate": "Por favor recompila y reinicia OpzoHub para activar por completo este tema."
 }

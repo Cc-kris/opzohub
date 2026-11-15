@@ -6,8 +6,8 @@
     "revert-theme": "Revert Theme",
     "current-theme": "Current Theme",
     "no-themes": "No installed themes found",
-    "revert-confirm": "Are you sure you wish to restore the default NodeBB theme?",
+    "revert-confirm": "Are you sure you wish to restore the default OpzoHub theme?",
     "theme-changed": "Theme Changed",
-    "revert-success": "You have successfully reverted your NodeBB back to it's default theme.",
-    "restart-to-activate": "Please rebuild and restart your NodeBB to fully activate this theme."
+    "revert-success": "You have successfully reverted your OpzoHub back to it's default theme.",
+    "restart-to-activate": "Please rebuild and restart your OpzoHub to fully activate this theme."
 }

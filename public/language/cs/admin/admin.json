@@ -1,13 +1,13 @@
 {
-	"alert.confirm-rebuild-and-restart": "Jste si jist/a, že chcete znovu sestavit a restartovat NodeBB?",
-	"alert.confirm-restart": "Jste si jist/a, že si přejete restartovat NodeBB?",
+	"alert.confirm-rebuild-and-restart": "Jste si jist/a, že chcete znovu sestavit a restartovat OpzoHub?",
+	"alert.confirm-restart": "Jste si jist/a, že si přejete restartovat OpzoHub?",
 
-	"acp-title": "Ovládací panel správce NodeBB | %1",
+	"acp-title": "Ovládací panel správce OpzoHub | %1",
 	"settings-header-contents": "Obsah",
 	"changes-saved": "Změny byly uloženy",
-	"changes-saved-message": "Vaše změny v NodeBB konfiguraci byly uloženy.",
+	"changes-saved-message": "Vaše změny v OpzoHub konfiguraci byly uloženy.",
 	"changes-not-saved": "Změny nebyly uloženy",
-	"changes-not-saved-message": "NodeBB narazil na problém při ukládání vašich změn. (%1)",
+	"changes-not-saved-message": "OpzoHub narazil na problém při ukládání vašich změn. (%1)",
 	"save-changes": "Uložit změny",
 	"min": "Min:",
 	"max": "Max:",

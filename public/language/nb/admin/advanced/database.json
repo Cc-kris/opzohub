@@ -22,7 +22,7 @@
 	"mongo.bytes-out": "Bytes ut",
 	"mongo.num-requests": "Antall forespørsler",
 	"mongo.raw-info": "MongoDB råinfo",
-	"mongo.unauthorized": "NodeBB kunne ikke hente statistikk fra MongoDB-databasen. Sørg for at brukeren som benyttes av NodeBB har rollen &quot;clusterMonitor&quot; for &quot;admin&quot;-databasen.",
+	"mongo.unauthorized": "OpzoHub kunne ikke hente statistikk fra MongoDB-databasen. Sørg for at brukeren som benyttes av OpzoHub har rollen &quot;clusterMonitor&quot; for &quot;admin&quot;-databasen.",
 
 	"redis": "Redis",
 	"redis.version": "Redis-versjon",

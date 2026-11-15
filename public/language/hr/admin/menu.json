@@ -99,6 +99,6 @@
 
 	"connection-lost": "Veza sa %1 je prekinuta, pokušavam se spojiti ...",
 
-	"alerts.version": "Running <strong>NodeBB v%1</strong>",
+	"alerts.version": "Running <strong>OpzoHub v%1</strong>",
 	"alerts.upgrade": "Upgrade to v%1"
 }

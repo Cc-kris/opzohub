@@ -91,7 +91,7 @@
 	"federation.disabled-cta": "Impostazioni della federazione &rarr;",
 	"federation.syncing-header": "Sincronizzazione",
 	"federation.syncing-intro": "Una categoria può seguire un \"Partecipante del Gruppo\" tramite il protocollo ActivityPub. Se il contenuto è ricevuto da uno dei partecipanti elencati di seguito, sarà automaticamente aggiunto a questa categoria.",
-	"federation.syncing-caveat": "N.B. Impostando la sincronizzazione qui si stabilisce una sincronizzazione unidirezionale. NodeBB tenta di iscrivere/seguire il partecipante, ma non è possibile presumere il contrario.",
+	"federation.syncing-caveat": "N.B. Impostando la sincronizzazione qui si stabilisce una sincronizzazione unidirezionale. OpzoHub tenta di iscrivere/seguire il partecipante, ma non è possibile presumere il contrario.",
 	"federation.syncing-none": "Questa categoria non segue attualmente nessuno.",
 	"federation.syncing-add": "Sincronizzazione con...",
 	"federation.syncing-actorUri": "Partecipante",

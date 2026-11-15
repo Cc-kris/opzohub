@@ -54,7 +54,7 @@
     "notifications.loading": "Laen teateid",
     "chats.loading": "Laen vestlusi",
     "drafts.loading": "Loading Drafts",
-    "motd.welcome": "Tere tulemast NodeBB foorumisse.",
+    "motd.welcome": "Tere tulemast OpzoHub foorumisse.",
     "alert.success": "Õnnestus",
     "alert.error": "Viga",
     "alert.warning": "Warning",

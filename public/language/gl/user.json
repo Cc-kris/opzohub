@@ -154,7 +154,7 @@
     "unread.cutoff-help": "Topics will be marked read if they have not been updated within this number of days.",
     "open-links-in-new-tab": "Abrir ligazóns externos nunca nova pestaña",
     "enable-topic-searching": "Permitir buscar dentro dun tema",
-    "topic-search-help": "Se se activa, o buscador do NodeBB superporase ao propio do navegador dentro de cada tema, permitindo buscar en todo o tema e non só naquilo que se presenta na pantalla.",
+    "topic-search-help": "Se se activa, o buscador do OpzoHub superporase ao propio do navegador dentro de cada tema, permitindo buscar en todo o tema e non só naquilo que se presenta na pantalla.",
     "update-url-with-post-index": "Update url with post index while browsing topics",
     "scroll-to-my-post": "Logo de enviar unha resposta, mostrar a nova mensaxe",
     "follow-topics-you-reply-to": "Segui-los temas aos que respondes",

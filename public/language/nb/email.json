@@ -47,7 +47,7 @@
     "notif.cta-new-chat": "Vis chat",
     "notif.test.short": "Testing av varsler",
     "notif.test.long": "Dette er en test av e-postmeldingen for varsler. Send hjelp!",
-    "test.text1": "Dette er en test e-post for å verifisere at e-postsystemet i NodeBB fungerer som det skal.",
+    "test.text1": "Dette er en test e-post for å verifisere at e-postsystemet i OpzoHub fungerer som det skal.",
     "unsub.cta": "Klikk her for å endre disse innstillingene",
     "unsubscribe": "Avslutt abonnement",
     "unsub.success": "Du vil ikke lenger motta e-poster fra <strong>%1</strong> utsendelseslisten",

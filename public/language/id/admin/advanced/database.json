@@ -22,7 +22,7 @@
 	"mongo.bytes-out": "Bytes Keluar",
 	"mongo.num-requests": "Jumlah Permintaan",
 	"mongo.raw-info": "Info Asali MongoDB",
-	"mongo.unauthorized": "NodeBB tidak dapat mengquery database MongoDB untuk statistik yang relevan. Harap pastikan bahwa pengguna yang digunakan oleh NodeBB berisi & quot; clusterMonitor & quot; peran & quot; admin & quot; database.",
+	"mongo.unauthorized": "OpzoHub tidak dapat mengquery database MongoDB untuk statistik yang relevan. Harap pastikan bahwa pengguna yang digunakan oleh OpzoHub berisi & quot; clusterMonitor & quot; peran & quot; admin & quot; database.",
 
 	"redis": "Redis",
 	"redis.version": "Versi Redis",

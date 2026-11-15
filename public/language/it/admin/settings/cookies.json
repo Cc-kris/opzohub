@@ -5,7 +5,7 @@
 	"consent.acceptance": "Messaggio di accettazione",
 	"consent.link-text": "Testo del link all'informativa sulla privacy",
 	"consent.link-url": "URL del link all'informativa sulla privacy",
-	"consent.blank-localised-default": "Lascia vuoto per usare i valori predefiniti localizzati di NodeBB",
+	"consent.blank-localised-default": "Lascia vuoto per usare i valori predefiniti localizzati di OpzoHub",
 	"settings": "Impostazioni",
 	"cookie-domain": "Dominio cookie di sessione",
 	"max-user-sessions": "Sessioni attive massime per utente",

@@ -1,5 +1,5 @@
 {
-    "title": "NodeBB",
+    "title": "OpzoHub",
     "showSiteTitle": 1,
     "defaultLang": "en-GB",
     "loginDays": 14,
@@ -27,9 +27,18 @@
     "newbieReputationThreshold": 3,
     "postQueue": 1,
     "postQueueReputationThreshold": 1,
-    "groupsExemptFromPostQueue": ["administrators", "Global Moderators"],
-    "groupsExemptFromNewUserRestrictions": ["administrators", "Global Moderators"],
-    "groupsExemptFromMaintenanceMode": ["administrators", "Global Moderators"],
+    "groupsExemptFromPostQueue": [
+        "administrators",
+        "Global Moderators"
+    ],
+    "groupsExemptFromNewUserRestrictions": [
+        "administrators",
+        "Global Moderators"
+    ],
+    "groupsExemptFromMaintenanceMode": [
+        "administrators",
+        "Global Moderators"
+    ],
     "minimumPostLength": 8,
     "maximumPostLength": 32767,
     "systemTags": "",
@@ -213,5 +222,8 @@
     "activitypubFilter": 0,
     "activitypubSummaryLimit": 500,
     "activitypubBreakString": "[...]",
-    "activitypubWorldDefaultCid": -1
+    "activitypubWorldDefaultCid": -1,
+    "homePageRoute": "opzohub-home",
+    "description": "OpzoHub",
+    "powered-by": "OpzoHub"
 }

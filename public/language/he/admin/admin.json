@@ -1,13 +1,13 @@
 {
-	"alert.confirm-rebuild-and-restart": "האם אתם בטוחים שברצונכם לבנות ולהפעיל מחדש את NodeBB?",
-	"alert.confirm-restart": "האם אתם בטוחים שברצונכם להפעיל מחדש את NodeBB?",
+	"alert.confirm-rebuild-and-restart": "האם אתם בטוחים שברצונכם לבנות ולהפעיל מחדש את OpzoHub?",
+	"alert.confirm-restart": "האם אתם בטוחים שברצונכם להפעיל מחדש את OpzoHub?",
 
-	"acp-title": "%1 | לוח בקרה למנהלי הפורום NodeBB",
+	"acp-title": "%1 | לוח בקרה למנהלי הפורום OpzoHub",
 	"settings-header-contents": "תוכן",
 	"changes-saved": "השינויים נשמרו",
-	"changes-saved-message": "השינויים שלכם בתצורת NodeBB נשמרו.",
+	"changes-saved-message": "השינויים שלכם בתצורת OpzoHub נשמרו.",
 	"changes-not-saved": "השינויים לא נשמרו",
-	"changes-not-saved-message": "NodeBB נתקל בבעיה בשמירת השינויים שלך. (%1)",
+	"changes-not-saved-message": "OpzoHub נתקל בבעיה בשמירת השינויים שלך. (%1)",
 	"save-changes": "שמירת שינויים",
 	"min": "מינימום:",
 	"max": "מקסימום:",

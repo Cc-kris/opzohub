@@ -91,7 +91,7 @@
 	"federation.disabled-cta": "フェデレーション設定 &rarr;",
 	"federation.syncing-header": "同期",
 	"federation.syncing-intro": "カテゴリは ActivityPub プロトコルを通じて「グループアクター」をフォローできます。以下にあるアクターからコンテンツを受信すると、このカテゴリに自動追加されます。",
-	"federation.syncing-caveat": "注: ここでの同期設定は一方向です。NodeBB はアクターの購読/フォローを試みますが、逆方向は保証されません。",
+	"federation.syncing-caveat": "注: ここでの同期設定は一方向です。OpzoHub はアクターの購読/フォローを試みますが、逆方向は保証されません。",
 	"federation.syncing-none": "このカテゴリは現在誰もフォローしていません。",
 	"federation.syncing-add": "同期先を追加...",
 	"federation.syncing-actorUri": "アクター",

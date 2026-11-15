@@ -1,13 +1,13 @@
 {
-	"alert.confirm-rebuild-and-restart": "Weet u zeker dat u de NodeBB bestanden wilt hergenereren en NodeBB opnieuw wilt opstarten?",
-	"alert.confirm-restart": "Weet u zeker dat u NodeBB opnieuw wilt opstarten?",
+	"alert.confirm-rebuild-and-restart": "Weet u zeker dat u de OpzoHub bestanden wilt hergenereren en OpzoHub opnieuw wilt opstarten?",
+	"alert.confirm-restart": "Weet u zeker dat u OpzoHub opnieuw wilt opstarten?",
 
-	"acp-title": "%1 | NodeBB Administrator Controlepaneel",
+	"acp-title": "%1 | OpzoHub Administrator Controlepaneel",
 	"settings-header-contents": "Inhoud",
 	"changes-saved": "Changes Saved",
-	"changes-saved-message": "Your changes to the NodeBB configuration have been saved.",
+	"changes-saved-message": "Your changes to the OpzoHub configuration have been saved.",
 	"changes-not-saved": "Changes Not Saved",
-	"changes-not-saved-message": "NodeBB encountered a problem saving your changes. (%1)",
+	"changes-not-saved-message": "OpzoHub encountered a problem saving your changes. (%1)",
 	"save-changes": "Save changes",
 	"min": "Min:",
 	"max": "Max:",

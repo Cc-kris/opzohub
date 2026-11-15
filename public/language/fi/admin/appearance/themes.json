@@ -6,8 +6,8 @@
     "revert-theme": "Revert Theme",
     "current-theme": "Nykyinen teema",
     "no-themes": "Asennettuja teemoja ei löytynyt.",
-    "revert-confirm": "Haluatko varmasti palauttaa NodeBB:n oletusteeman?",
+    "revert-confirm": "Haluatko varmasti palauttaa OpzoHub:n oletusteeman?",
     "theme-changed": "Teema vaihdettu.",
-    "revert-success": "NodeBB:n oletusteeman palautus onnistui.",
-    "restart-to-activate": "Sinun on uudelleenrakennettava ja -käynnistettävä NodeBB, jotta teeman aktivointi saadaan suoritettua loppuun."
+    "revert-success": "OpzoHub:n oletusteeman palautus onnistui.",
+    "restart-to-activate": "Sinun on uudelleenrakennettava ja -käynnistettävä OpzoHub, jotta teeman aktivointi saadaan suoritettua loppuun."
 }

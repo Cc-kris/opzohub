@@ -91,7 +91,7 @@
 	"federation.disabled-cta": "Setări Federație &rarr;",
 	"federation.syncing-header": "Sincronizare",
 	"federation.syncing-intro": "O categorie poate urma un „Actor de grup” prin protocolul ActivityPub. Dacă se primește conținut de la unul dintre actorii enumerați mai jos, acesta va fi adăugat automat în această categorie.",
-	"federation.syncing-caveat": "Notă: Configurarea sincronizării aici stabilește o sincronizare unidirecțională. NodeBB încearcă să se aboneze/să urmărească actorul, dar nu se poate presupune inversul.",
+	"federation.syncing-caveat": "Notă: Configurarea sincronizării aici stabilește o sincronizare unidirecțională. OpzoHub încearcă să se aboneze/să urmărească actorul, dar nu se poate presupune inversul.",
 	"federation.syncing-none": "Această categorie nu urmărește pe nimeni în prezent.",
 	"federation.syncing-add": "Sincronizează cu...",
 	"federation.syncing-actorUri": "Actor",

@@ -91,7 +91,7 @@
 	"federation.disabled-cta": "“联邦”设置 &rarr;",
 	"federation.syncing-header": "同步",
 	"federation.syncing-intro": "一个版块可以通过 ActivityPub 协议关注一个 “群组行为者”。如果从下列行为者之一收到内容，则会自动添加到该版块中。",
-	"federation.syncing-caveat": "注意：在此设置同步将建立单向同步。NodeBB 会尝试订阅/关注“行为者”，但不能反过来。",
+	"federation.syncing-caveat": "注意：在此设置同步将建立单向同步。OpzoHub 会尝试订阅/关注“行为者”，但不能反过来。",
 	"federation.syncing-none": "本版块目前没有关注任何人。",
 	"federation.syncing-add": "与...同步",
 	"federation.syncing-actorUri": "行为者",

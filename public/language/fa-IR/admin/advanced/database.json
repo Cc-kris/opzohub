@@ -22,7 +22,7 @@
 	"mongo.bytes-out": "بایت های خروجی",
 	"mongo.num-requests": "تعداد درخواست ها",
 	"mongo.raw-info": "اطلاعات پایه پایگاه داده MongoDB",
-	"mongo.unauthorized": "NodeBB نتوانست پرس و جوی آماری را ازMongoDB دریافت کند. لطفا مطمئن شوید کاربری که NodeBB به وسیله آن به MongoDB متصل شده است مجوز clusterMonitor را برای مدیر داشته باشد.",
+	"mongo.unauthorized": "OpzoHub نتوانست پرس و جوی آماری را ازMongoDB دریافت کند. لطفا مطمئن شوید کاربری که OpzoHub به وسیله آن به MongoDB متصل شده است مجوز clusterMonitor را برای مدیر داشته باشد.",
 
 	"redis": "Redis",
 	"redis.version": "نگارش Redis",

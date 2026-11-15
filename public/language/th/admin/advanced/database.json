@@ -22,7 +22,7 @@
 	"mongo.bytes-out": "จำนวนไบต์ที่ส่งออก",
 	"mongo.num-requests": "จำนวนการร้องขอ",
 	"mongo.raw-info": "ข้อมูลดิบของ MongoDB",
-	"mongo.unauthorized": "NodeBB ไม่สามารถดึงข้อมูลจากฐานข้อมูล MongoDB เพื่อคำนวนสถิติที่เกี่ยวข้อง โปรดตรวจสอบว่าชื่อผู้ใช้งานที่ใช้โดย NodeBB ได้สิทธิ์ &quot;clusterMonitor&quot; สำหรับฐานข้อมูล &quot;admin&quot;",
+	"mongo.unauthorized": "OpzoHub ไม่สามารถดึงข้อมูลจากฐานข้อมูล MongoDB เพื่อคำนวนสถิติที่เกี่ยวข้อง โปรดตรวจสอบว่าชื่อผู้ใช้งานที่ใช้โดย OpzoHub ได้สิทธิ์ &quot;clusterMonitor&quot; สำหรับฐานข้อมูล &quot;admin&quot;",
 
 	"redis": "Redis",
 	"redis.version": "Redis เวอร์ชั่น",

@@ -2,7 +2,7 @@
     "register": "Reģistrēties",
     "already-have-account": "Already have an account?",
     "cancel-registration": "Atcelt reģistrācijas pieteikumu",
-    "help.email": "Pēc noklusējuma Tava e-pasta adrese nebūs redzama ārpus NodeBB.",
+    "help.email": "Pēc noklusējuma Tava e-pasta adrese nebūs redzama ārpus OpzoHub.",
     "help.username-restrictions": "Unikāls lietotājvārds starp %1 un %2 rakstzīmēm. Citi var pieminēt Tevi izmantojot @<span id='yourUsername'>lietotājvārds</span>.",
     "help.minimum-password-length": "Tavas paroles garumam jābūt vismaz %1 rakstzīmēm.",
     "email-address": "E-pasta adrese",

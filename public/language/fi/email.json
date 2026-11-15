@@ -47,7 +47,7 @@
     "notif.cta-new-chat": "Avaa keskustelu",
     "notif.test.short": "Testataan ilmoituksia",
     "notif.test.long": "Tämä on ilmoitusten testiviesti. Lähetä apua!",
-    "test.text1": "Tämä on testiviesti, jolla vahvistetaan NodeBB-asennuksesi sähköpostiasetusten toimivan oikein.",
+    "test.text1": "Tämä on testiviesti, jolla vahvistetaan OpzoHub-asennuksesi sähköpostiasetusten toimivan oikein.",
     "unsub.cta": "Muuta näitä asetuksia painamalla tästä",
     "unsubscribe": "\"Lopeta tilaus\"",
     "unsub.success": "Et enää saa viestejä postituslistalta <strong>%1</strong>",

@@ -700,10 +700,10 @@ body.page-opzohub-home .container#content {
 @media (max-width: 1180px) {
 	.opzohub-home { padding-inline: 24px; }
 	.opzohub-topbar {
-		grid-template-columns: minmax(140px, 180px) minmax(260px, 1fr) minmax(190px, 260px);
-		column-gap: 18px;
+		grid-template-columns: minmax(140px, 180px) minmax(220px, 1fr) minmax(170px, 230px) auto;
+		column-gap: 14px;
 	}
-	.opzohub-auth { display: none; }
+	.opzohub-auth { display: flex; }
 	.opzohub-page-grid {
 		grid-template-columns: minmax(170px, 220px) minmax(0, 1fr);
 		column-gap: 20px;

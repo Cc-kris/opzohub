@@ -54,7 +54,7 @@
     "notifications.loading": "알림 로드 중",
     "chats.loading": "채팅 로드 중",
     "drafts.loading": "임시 보관함 로드 중",
-    "motd.welcome": "NodeBB에 오신 것을 환영합니다. 미래의 토론 플랫폼입니다.",
+    "motd.welcome": "OpzoHub에 오신 것을 환영합니다. 미래의 토론 플랫폼입니다.",
     "alert.success": "성공",
     "alert.error": "오류",
     "alert.warning": "경고",

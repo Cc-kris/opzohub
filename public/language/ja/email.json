@@ -47,7 +47,7 @@
     "notif.cta-new-chat": "チャットを表示",
     "notif.test.short": "通知のテスト",
     "notif.test.long": "これは通知メールのテストです。",
-    "test.text1": "このメールはNodeBBのメーラー（emailer）が正しく設定されているか確認をするためのメールです。",
+    "test.text1": "このメールはOpzoHubのメーラー（emailer）が正しく設定されているか確認をするためのメールです。",
     "unsub.cta": "ここをクリックして設定を変更する",
     "unsubscribe": "購読解除",
     "unsub.success": "<strong>%1</strong>のメーリングリストからのメールは届かなくなります",

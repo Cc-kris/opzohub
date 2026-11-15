@@ -1,13 +1,13 @@
 {
-	"alert.confirm-rebuild-and-restart": "Ste prepričani, da želite obnoviti in ponovno zagnati NodeBB?",
-	"alert.confirm-restart": "Ste prepričani, da želite znova zagnati NodeBB?",
+	"alert.confirm-rebuild-and-restart": "Ste prepričani, da želite obnoviti in ponovno zagnati OpzoHub?",
+	"alert.confirm-restart": "Ste prepričani, da želite znova zagnati OpzoHub?",
 
-	"acp-title": "%1 | NodeBB skrbniška  nadzorna plošča",
+	"acp-title": "%1 | OpzoHub skrbniška  nadzorna plošča",
 	"settings-header-contents": "Vsebine",
 	"changes-saved": "Spremembe so shranjene",
-	"changes-saved-message": "Your changes to the NodeBB configuration have been saved.",
+	"changes-saved-message": "Your changes to the OpzoHub configuration have been saved.",
 	"changes-not-saved": "Spremembe niso shranjene",
-	"changes-not-saved-message": "NodeBB encountered a problem saving your changes. (%1)",
+	"changes-not-saved-message": "OpzoHub encountered a problem saving your changes. (%1)",
 	"save-changes": "Save changes",
 	"min": "Min:",
 	"max": "Max:",

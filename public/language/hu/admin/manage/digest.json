@@ -1,7 +1,7 @@
 {
 	"lead": "Alább láthatóak az összefoglalók kézbesítési statisztikáinak és idejeinek listája",
 	"disclaimer": "Kérjük vegye figyelembe, hogy az email kézbesítés nem garantált az email technológia természete miatt. Sok változó tényező befolyásolja, hogy egy email elküldése a címzettnek végül valóban sikeresen megérkezik-e a felhasználó postaládájába. Ide értendő a szerver ismertsége, a feketelistázott IP címek és hogy a DKIM/SPD/DMARC konfigurált-e.",
-	"disclaimer-continued": "A sikeres kézbesítést azt jelenti, hogy az üzenet elküldésre került a NodeBB által és a címzett szerver azt tudomásul vette. Azt nem jelenti, hogy az email megérkezett a felhasználó postafiókjába. A legjobb eredmény elérésének érdekében ajánljuk harmadik féltől származó email kézbesítő rendszer használatát, mint például a <a href=\"https://sendgrid.com/why-sendgrid/\">SendGrid</a>.",
+	"disclaimer-continued": "A sikeres kézbesítést azt jelenti, hogy az üzenet elküldésre került a OpzoHub által és a címzett szerver azt tudomásul vette. Azt nem jelenti, hogy az email megérkezett a felhasználó postafiókjába. A legjobb eredmény elérésének érdekében ajánljuk harmadik féltől származó email kézbesítő rendszer használatát, mint például a <a href=\"https://sendgrid.com/why-sendgrid/\">SendGrid</a>.",
 
 	"user": "Felhasználó",
 	"subscription": "Feliratkozás típusa",

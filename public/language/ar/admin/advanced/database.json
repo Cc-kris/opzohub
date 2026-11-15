@@ -22,7 +22,7 @@
 	"mongo.bytes-out": "البايتات الصادرة",
 	"mongo.num-requests": "عدد الطلبات",
 	"mongo.raw-info": "معلومات MongoDB الأولية",
-	"mongo.unauthorized": "لم يستطع NodeBB من الاستعلام عن احصاءات قواعد البيانات ل MongoDB. الرجاء التأكد من أن المستخدم في NodeBB يحتوي على دور &quot;clusterMonitor&quot; ال &quot;admin&quot; لقواعد البيانات.",
+	"mongo.unauthorized": "لم يستطع OpzoHub من الاستعلام عن احصاءات قواعد البيانات ل MongoDB. الرجاء التأكد من أن المستخدم في OpzoHub يحتوي على دور &quot;clusterMonitor&quot; ال &quot;admin&quot; لقواعد البيانات.",
 
 	"redis": "Redis",
 	"redis.version": "إصدار Redis",
